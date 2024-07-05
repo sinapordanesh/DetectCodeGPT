@@ -1,0 +1,6 @@
+openai
+numpy
+pytorch
+transformers
+loguru
+docopt

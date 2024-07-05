@@ -280,7 +280,7 @@ def generate_hf(model_name, prompts, solutions, batch_size=16, max_length_sample
 if __name__ == "__main__":
 
     # path = 'data/CodeSearchNet'
-    # path = "data/TheVault"
+    path = "data/TheVault"
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', type=str, default="data/CodeSearchNet")
