@@ -1,6 +1,6 @@
 openai
 numpy
-pytorch
+torch
 transformers
 loguru
 docopt

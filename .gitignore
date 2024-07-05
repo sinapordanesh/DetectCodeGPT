@@ -136,6 +136,6 @@ dataset/
 *.gz
 *.out
 cache/
-data/
+# data/
 *back*/
 *.pt
