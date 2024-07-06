@@ -132,8 +132,8 @@ dmypy.json
 # custom
 
 dataset/
-*.jsonl.gz
-*.gz
+# *.jsonl.gz
+# *.gz
 *.out
 cache/
 # data/
