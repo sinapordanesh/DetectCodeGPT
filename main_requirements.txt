@@ -4,3 +4,11 @@ torch
 transformers
 loguru
 docopt
+pandas
+scipy
+matplotlib
+scikit-learn
+tqdm
+baselines
+accelerate
+tree-sitter==0.20.1

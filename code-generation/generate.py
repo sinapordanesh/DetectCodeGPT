@@ -19,10 +19,11 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # device = torch.device('cpu')
 
 
-def load_data(path='data/CodeSearchNet', language='python', max_num=10000):
+def load_data(path='data/CodeSearchNet', language='python', max_num=10000, file_name='train_50'):
 
     all_prompts = []
     all_solutions = []
+    
 
     if 'humaneval' in path:
         path_to_data = f'{path}/{language}/data/humaneval_{language}.jsonl.gz'
@@ -39,7 +40,7 @@ def load_data(path='data/CodeSearchNet', language='python', max_num=10000):
 
     elif 'CodeSearchNet' in path:
 
-        path_to_data = f'{path}/{language}/train.jsonl'
+        path_to_data = f'{path}/{language}/{file_name}.jsonl'
 
         logger.info(f'Loading data from {path_to_data}')
 
@@ -280,7 +281,7 @@ def generate_hf(model_name, prompts, solutions, batch_size=16, max_length_sample
 if __name__ == "__main__":
 
     # path = 'data/CodeSearchNet'
-    path = "data/TheVault"
+    # path = "data/TheVault"
 
     parser = argparse.ArgumentParser()
     parser.add_argument('--path', type=str, default="data/CodeSearchNet")

@@ -112,6 +112,7 @@ def plot_distribution(original_counts, sampled_counts, title, save_name=None):
 
     # save to pdf
     if save_name:
+        os.makedirs('figures', exist_ok=True)
         plt.savefig(f'figures/{save_name}.pdf', bbox_inches='tight')
 
     plt.show()
@@ -142,11 +143,15 @@ def main(dataset, dataset_key, temperature, tokenizer_name):
 
 dataset = "CodeSearchNet"
 tokenizer_name = "codellama/CodeLlama-7b-hf"
+# tokenizer_name = "codeparrot/codeparrot"
 temperature = 0.2
-dataset_key = "CodeLlama-7b-hf-tp0.2-nostop"
+# dataset_key = "CodeLlama-7b-hf-tp0.2-nostop"
+dataset_key = "codeparrot-100000-tp0.2"
+
 
 main(dataset, dataset_key, temperature, tokenizer_name)
 
 temperature = 1.0
-dataset_key = "CodeLlama-7b-hf-tp1.0-nostop"
+# dataset_key = "CodeLlama-7b-hf-tp1.0-nostop"
+dataset_key = "codeparrot-100000-tp0.2"
 main(dataset, dataset_key, temperature, tokenizer_name)

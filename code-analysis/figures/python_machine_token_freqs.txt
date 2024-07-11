@@ -1,0 +1,154 @@
+.	95
+(	66
+)	64
+,	48
+:	41
+if	29
+return	25
+rect	23
+int	22
+"	18
+isinstance	16
+=	15
+obj	14
+np	14
+self	14
++	13
+face_locations	11
+[	10
+]	10
+cls	10
+_	9
+dir>/	9
+float	9
+dt	9
+None	8
+debug	8
+└── <trai	7
+==	7
+is	7
+size	7
+log	7
+width	7
+cv2	6
+Catalyst	6
+False	6
+right	6
+dtype	5
+elif	5
+sqlTypeTable	5
+face_image	5
+new_obj	4
+key	4
+value	4
+in	4
+import	4
+plt	4
+gray	4
+0	4
+height	4
+e	3
+True	3
+sock	3
+\r	3
+\n	3
+resp	3
+as	3
+img	3
+getTables	3
+model	3
+spill_cmd	3
+datetime	3
+a	2
+├── <trai	2
+pd	2
+integer	2
+int64	2
+floating	2
+def	2
+for	2
+items	2
+sendall	2
+b"	2
+format	2
+print	2
+matplotlib	2
+img_path	2
+cvtColor	2
+COLOR_BGR2GRAY	2
+imshow	2
+_cachedSqlType	2
+cache	2
+sqlType	2
+getTableName	2
+get_face_locations	2
+not	2
+1	2
+dumping values	2
+data	2
+bottom	2
+y_offset	2
+�── <some	1
+me2>.png	1
+│   └── <somena	1
+1>.jpg	1
+└── <some	1
+me2>.jpg	1
+├	1
+Series	1
+DataFrame	1
+float64	1
+ndarray	1
+matrix	1
+_converter	1
+dict	1
+{	1
+}	1
+_create_converter	1
+list	1
+while	1
+try	1
+recv	1
+4096	1
+b'	1
+'	1
+break	1
+else	1
+except	1
+Exception	1
+worker: {0}	1
+pyplot	1
+from	1
+cm	1
+numpy	1
+imread	1
+# Convert the OpenCV image to grayscale	1
+# Display the prediction labels	1
+title	1
+# Display the number of detected faces	1
+# Get the sqlType() for the class	1
+getSqlType	1
+# Get the sqlType() for the table	1
+# Get the class	1
+append	1
+face_	1
+<=	1
+2	1
+3	1
+4	1
+5	1
+6	1
+Dumping values	1
+data_path	1
+spilling	1
++=	1
+ 	1
+join	1
+spilling done	1
+_get_spill_cmd	1
+NullType	1
+or	1
+str	1
+date	1
+left	1
+top	1

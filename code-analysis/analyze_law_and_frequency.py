@@ -5,6 +5,7 @@ from collections import Counter
 from transformers import RobertaTokenizer, AutoTokenizer
 import argparse
 from loguru import logger
+# import tree_sitter_python as tspython # ***
 from tree_sitter import Language, Parser
 import os
 from tqdm import tqdm
@@ -24,7 +25,7 @@ if not os.path.exists('build/my-languages.so'):
         [
             './tree-sitter/tree-sitter-python',
             './tree-sitter/tree-sitter-java',
-            './tree-sitter/tree-sitter-php',
+            # './tree-sitter/tree-sitter-php', # ***
             './tree-sitter/tree-sitter-go',
             './tree-sitter/tree-sitter-ruby',
             './tree-sitter/tree-sitter-javascript',
@@ -35,7 +36,7 @@ else:
 
 PYTHON_LANGUAGE = Language('build/my-languages.so', 'python')
 JAVA_LANGUAGE = Language('build/my-languages.so', 'java')
-PHP_LANGUAGE = Language('build/my-languages.so', 'php')
+# PHP_LANGUAGE = Language('build/my-languages.so', 'php') # ***
 GO_LANGUAGE = Language('build/my-languages.so', 'go')
 RUBY_LANGUAGE = Language('build/my-languages.so', 'ruby')
 JAVASCRIPT_LANGUAGE = Language('build/my-languages.so', 'javascript')
@@ -44,7 +45,7 @@ JAVASCRIPT_LANGUAGE = Language('build/my-languages.so', 'javascript')
 LANGUAGE_MAP = {
     'java': JAVA_LANGUAGE,
     'python': PYTHON_LANGUAGE,
-    'php': PHP_LANGUAGE,
+    # 'php': PHP_LANGUAGE, # ***
     'go': GO_LANGUAGE,
     'ruby': RUBY_LANGUAGE,
     'javascript': JAVASCRIPT_LANGUAGE,
@@ -384,8 +385,21 @@ def process_data_multithreaded(data, worker_function, lang, num_processes=None):
     if not num_processes:
         num_processes = multiprocessing.cpu_count() - 1
 
+    # Ensure num_processes is not greater than the length of data
+    num_processes = min(num_processes, len(data))
+
+    # Ensure len(data) is not zero
+    if len(data) == 0:
+        raise ValueError("Data length is zero, cannot proceed with chunking")
+
     chunk_size = len(data) // num_processes
-    chunks = [data[i:i+chunk_size] for i in range(0, len(data), chunk_size)]
+
+    # Ensure chunk_size is at least 1
+    if chunk_size == 0:
+        chunk_size = 1
+
+    chunks = [data[i:i + chunk_size] for i in range(0, len(data), chunk_size)]
+
 
     results = []
     args_list = [(worker_function, chunk, lang) for chunk in chunks]
@@ -625,8 +639,21 @@ def _get_lengths_and_vocab_sizes_multithreaded(data, lang, num_processes=None):
     if not num_processes:
         num_processes = multiprocessing.cpu_count() - 1
 
+    # Ensure num_processes is not greater than the length of data
+    num_processes = min(num_processes, len(data))
+
+    # Ensure len(data) is not zero
+    if len(data) == 0:
+        raise ValueError("Data length is zero, cannot proceed with chunking")
+
     chunk_size = len(data) // num_processes
-    chunks = [data[i:i+chunk_size] for i in range(0, len(data), chunk_size)]
+
+    # Ensure chunk_size is at least 1
+    if chunk_size == 0:
+        chunk_size = 1
+
+    chunks = [data[i:i + chunk_size] for i in range(0, len(data), chunk_size)]
+
 
     all_code_lengths = []
     all_vocab_sizes = []
@@ -679,7 +706,7 @@ if __name__ == '__main__':
     lang = 'python'
 
 
-    code_pairs = load_data(dataset='CodeSearchNet', key='CodeLlama-7b-hf-tp1.0-nostop', max_num=max_num)
+    code_pairs = load_data(dataset='CodeSearchNet', key='codeparrot-100000-tp0.2', max_num=max_num)
 
     # analyze all the identifiers
     # analyze_identifiers(code_pairs, lang)
@@ -692,7 +719,7 @@ if __name__ == '__main__':
     check_heaps_law(code_pairs, lang)
 
 
-    code_pairs = load_data(dataset='CodeSearchNet', key='CodeLlama-7b-hf-tp1.0-nostop', max_num=max_num)
+    code_pairs = load_data(dataset='CodeSearchNet', key='codeparrot-100000-tp0.2', max_num=max_num)
 
     # analyze all the identifiers
     # analyze_identifiers(code_pairs, lang)
