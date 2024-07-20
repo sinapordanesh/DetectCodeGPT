@@ -1,0 +1,5 @@
+print("4")
+print("< 0 1 8")
+print("+ 0 1 2")
+print("+ 2 8 2")
+print("+ 0 0 0")
