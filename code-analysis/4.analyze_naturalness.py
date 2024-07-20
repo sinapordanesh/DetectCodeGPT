@@ -1,18 +1,18 @@
-import pandas as pd
-import numpy as np
-from token_tagging import *
-import multiprocessing
-import torch
-from tqdm import tqdm
-from loguru import logger
-import matplotlib.pyplot as plt
-from baselines.all_baselines import run_all_baselines
-from transformers import AutoTokenizer
-import json
+# The above code is a Python script that performs the following tasks:
+# %%
 import argparse
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
+import json
+from baselines.utils.preprocessing import preprocess_and_save
+from baselines.utils.loadmodel import load_base_model_and_tokenizer, load_mask_filling_model
+# from baselines.sample_generate.generate import generate_data
+from baselines.all_baselines import run_all_baselines
+import matplotlib.pyplot as plt
+from loguru import logger
+from tqdm import tqdm
+import torch
 
 
 parser = argparse.ArgumentParser()
@@ -63,16 +63,15 @@ parser.add_argument('--cut_def', action='store_true')
 parser.add_argument('--max_todo_num', type=int, default=3)
 
 args_dict = {
-
     'dataset': "CodeSearchNet",
-    'dataset_key': "CodeLlama-7b-hf-tp0.2",
+    'dataset_key': "CodeLlama-7b-hf-10000-tp1.0",
     'pct_words_masked': 0.5,
     'pct_identifiers_masked': 0.75,
     'span_length': 2,
-    'n_samples': 10000,
+    'n_samples': 500,
     'n_perturbation_list': "50",
     'n_perturbation_rounds': 1,
-    'base_model_name': "bigcode/santacoder",
+    'base_model_name': "codellama/CodeLlama-7b-hf",
     'scoring_model_name': "",
     'mask_filling_model_name': "Salesforce/codet5p-770m",
     'batch_size': 25,
@@ -96,13 +95,13 @@ args_dict = {
     'pre_perturb_span_length': 5,
     'random_fills': False,
     'random_fills_tokens': False,
-    'cache_dir': "~/.cache/huggingface/hub",
+    'cache_dir': "/home/saman.pordanesh/.cache/huggingface/hub",  #----->>>>> MODIFY THIS DIRECTOYR ADDRESS <<<<<-----#
     'prompt_len': 30,
     'generation_len': 200,
     'min_words': 55,
     'temperature': 1,
     'baselines': "LRR,DetectGPT,NPR",
-    'perturb_type': "random-insert-space+newline",  # half of the examples will have newline, half will have new space
+    'perturb_type': "random-insert-space+newline", # half of the examples will have newline, half will have new space
     'min_len': 0,
     'max_len': 128,
     'max_comment_num': 10,
@@ -125,15 +124,26 @@ n_perturbation_list = [int(x) for x in args.n_perturbation_list.split(",")]
 n_perturbation_rounds = args.n_perturbation_rounds
 n_similarity_samples = args.n_similarity_samples
 
+cache_dir, base_model_name, SAVE_FOLDER = preprocess_and_save(args)
+model_config = {}
+model_config['cache_dir'] = cache_dir
+
+# mask filling t5 model
+# model_config = load_mask_filling_model(args, mask_filling_model_name, model_config)
+
 logger.info(f'args: {args}')
 
-tokenizer = AutoTokenizer.from_pretrained(args.base_model_name, cache_dir=args.cache_dir)
+model_config = load_base_model_and_tokenizer(args, model_config)
 
+tokenizer = model_config['base_tokenizer']
 
-token_categories = ['keyword', 'identifier', 'literal', 'operator', 'statement_function', 'data_structure', 'module_block', 'delimiters', 'other', 'comment', 'whitespace']
+from tqdm import tqdm
+import multiprocessing
+from token_tagging import *
+
+token_categories = ['keyword', 'identifier', 'literal', 'operator', 'statement_function', 'data_structure', 'module_block', 'delimiter_access', 'other', 'comment', 'whitespace']
 categories2idx = {category: i for i, category in enumerate(token_categories)}
 idx2categories = {i: category for i, category in enumerate(token_categories)}
-
 
 def process_chunk(chunk):
     results = []
@@ -216,8 +226,7 @@ def process_data(data, tokenizer):
 
     return new_data
 
-
-def generate_data(dataset, key, tokenizer, max_num=200, min_len=1, max_len=128, max_comment_num=10, max_def_num=5, cut_def=False, max_todo_num=3):
+def generate_data(dataset, key, max_num=200, min_len=0, max_len=128, max_comment_num=10, max_def_num=5, cut_def=False, max_todo_num=3):
 
     path = f'../code-generation/output/{dataset}/{key}/outputs.txt'
 
@@ -259,7 +268,7 @@ def generate_data(dataset, key, tokenizer, max_num=200, min_len=1, max_len=128, 
             # if the are too many comments, skip
             def count_comment(text):
                 return text.count('#')
-
+            
             if count_comment(line['solution']) > max_comment_num or count_comment(line['output']) > max_comment_num:
                 max_comment_num_count += 1
                 continue
@@ -267,211 +276,168 @@ def generate_data(dataset, key, tokenizer, max_num=200, min_len=1, max_len=128, 
             # if there are too many TODOs, skip
             def count_todo_comment(text):
                 return text.count('# TODO') + text.count('# todo')
-
+            
             if count_todo_comment(line['solution']) > max_todo_num or count_todo_comment(line['output']) > max_todo_num:
                 max_todo_num_count += 1
                 continue
+
 
             # the number of text.count("'''") and text.count('"""') should be <1
             if line['solution'].count("'''") > 0 or line['solution'].count('"""') > 0 or line['output'].count("'''") > 0 or line['output'].count('"""') > 0:
                 function_comment_num_count += 1
                 continue
 
-            # cut to 128 tokens
             all_originals.append(' '.join(line['solution'].split(' ')[:max_len]))
             all_samples.append(' '.join(line['output'].split(' ')[:max_len]))
-
-    logger.info(f'Loaded {len(all_originals)} examples before tagging')
-
-    # data = process_data({'original': all_originals, 'sampled': all_samples}, tokenizer)
-    data = process_data_multithreaded({'original': all_originals, 'sampled': all_samples}, tokenizer)
-
-    max_num = min(max_num, len(all_originals))
 
     logger.info(f'{max_def_num_count} examples have more than {max_def_num} "def"')
     logger.info(f'{min_len_count} examples have less than {min_len} words')
     logger.info(f'{max_comment_num_count} examples have more than {max_comment_num} comments')
     logger.info(f'{max_todo_num_count} examples have more than {max_todo_num} TODOs')
     logger.info(f'{function_comment_num_count} examples have more than 1 function comment')
-    logger.info(f'Loaded {len(data["original"])} examples after filtering, and will return {max_num} examples')
+    logger.info(f'Loaded {len(all_originals)} examples after filtering, and will return {min(max_num, len(all_originals))} examples')
 
-    # data = {
-    #     "original": all_originals[:max_num],
-    #     "sampled": all_samples[:max_num]
-    # }
+    # import random
+    # random.seed(42)
+    # random.shuffle(all_originals)
+    # random.shuffle(all_samples)
 
-    # cut the data based on the max_num
     data = {
-        "original": data["original"][:max_num],
-        "sampled": data["sampled"][:max_num],
-        "token_categories_original": data["token_categories_original"][:max_num],
-        "token_categories_sampled": data["token_categories_sampled"][:max_num]
+        "original": all_originals[:max_num],
+        "sampled": all_samples[:max_num]
     }
 
     return data
 
-
-data = generate_data(args.dataset, args.dataset_key, tokenizer, max_num=args.n_samples, min_len=args.min_len, max_len=args.max_len,
-                     max_comment_num=args.max_comment_num, max_def_num=args.max_def_num, cut_def=args.cut_def, max_todo_num=args.max_todo_num)
+data = generate_data(args.dataset, args.dataset_key, max_num=args.n_samples, min_len=args.min_len, max_len=args.max_len, max_comment_num=args.max_comment_num, max_def_num=args.max_def_num, cut_def=args.cut_def, max_todo_num=args.max_todo_num)
 
 logger.info(f'Original: {data["original"][0]}')
 logger.info(f'Sampled: {data["sampled"][0]}')
 
-token_categories = ['keyword',
-                    'identifier',
-                    'literal',
-                    'operator',
-                    'statement_function',
-                    'data_structure',
-                    'module_block',
-                    'delimiters',
-                    'other',
-                    'comment',
-                    'whitespace']
+import torch
+import torch.nn.functional as F
 
-categories2idx = {category: i for i, category in enumerate(token_categories)}
-idx2categories = {i: category for i, category in enumerate(token_categories)}
+def compute_model_outputs(text, args, model_config):
+    device_num = torch.cuda.device_count() - 1
 
+    with torch.no_grad():
+        if ('13b' in model_config['base_model'].config.name_or_path) or ('20b' in model_config['base_model'].config.name_or_path):
+            tokenized = model_config['base_tokenizer'](text, return_tensors="pt").to(f'cuda:{device_num}')
+        else:
+            tokenized = model_config['base_tokenizer'](text, return_tensors="pt").to(args.DEVICE)
 
-def get_category_frequencies(token_categories):
-    """
-    Compute the frequencies of each category in a list of token categories.
-    """
-    freqs = np.zeros(len(categories2idx))
-    for categories in token_categories:
-        for cat in categories:
-            freqs[cat] += 1
-    return freqs
+        labels = tokenized['input_ids']
+        # drop the "token_type_ids" key if it exists
+        if 'token_type_ids' in tokenized.keys():
+            tokenized.pop('token_type_ids')
+        model_outputs = model_config['base_model'](**tokenized, labels=labels)
+        logits = model_outputs.logits[:, :-1]
+        ll = -model_outputs.loss.item()
+        # logits = model_config['base_model'](**tokenized).logits[:, :-1]
+        # ll = -model_config['base_model'](**tokenized, labels=labels).loss.item()
+
+    return tokenized, logits, labels, ll
 
 
-def plot_category_distribution(freqs_orig, freqs_sampled, title="Token Category Distribution", save_name="token-category-distribution"):
-    """
-    Plot the distributions of token categories for original and sampled sentences.
-    """
+def compute_metrics(text_list, args, model_config):
+    log_likelihoods = []
+    entropies = []
+    ranks = []
+    log_ranks = []
 
-    # normalize frequencies
-    freqs_orig = freqs_orig / np.sum(freqs_orig)
-    freqs_sampled = freqs_sampled / np.sum(freqs_sampled)
+    for text in tqdm(text_list):
+        tokenized, logits, labels, ll = compute_model_outputs(text, args, model_config)
 
-    labels = token_categories
-    x = np.arange(len(labels))
-    width = 0.35
+        # Compute entropy
+        neg_entropy = F.softmax(logits, dim=-1) * F.log_softmax(logits, dim=-1)
+        entropy = -neg_entropy.sum(-1).mean().item()
 
-    fig, ax = plt.subplots(figsize=(15, 7))
-    rects1 = ax.bar(x - width/2, freqs_orig, width, label='Human', color='orange', alpha=0.5, edgecolor='orange')
-    rects2 = ax.bar(x + width/2, freqs_sampled, width, label='Machine', color='green', alpha=0.5, edgecolor='green')
+        # Compute rank
+        matches = (logits.argsort(-1, descending=True) == labels[:, 1:].unsqueeze(-1)).nonzero()
+        assert matches.shape[1] == 3, f"Expected 3 dimensions in matches tensor, got {matches.shape}"
+        current_ranks, timesteps = matches[:, -1], matches[:, -2]
+        assert (timesteps == torch.arange(len(timesteps)).to(timesteps.device)).all(), "Expected one match per timestep"
+        current_ranks = current_ranks.float() + 1  # convert to 1-indexed rank
+        rank = current_ranks.float().mean().item()
+        log_rank = torch.log(current_ranks).float().mean().item()
 
-    # ax.set_xlabel('Token Category')
-    ax.set_ylabel('Frequency')
+        # Store results
+        log_likelihoods.append(ll)
+        entropies.append(entropy)
+        ranks.append(rank)
+        log_ranks.append(log_rank)
+
+    return log_likelihoods, entropies, ranks, log_ranks
+
+from baselines.utils.run_baseline import get_roc_metrics
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.stats import norm
+from sklearn.neighbors import KernelDensity
+
+# Calculate metrics for original and sampled data
+orig_ll, orig_entropy, orig_rank, orig_log_rank = compute_metrics(data['original'], args, model_config)
+sampled_ll, sampled_entropy, sampled_rank, sampled_log_rank = compute_metrics(data['sampled'], args, model_config)
+
+def vislualize_distribution(predictions, title, ax, xlabel):
+
+    ax.hist(predictions['real'], bins=50, density=True, alpha=0.5, color='orange', edgecolor='orange', label='Human')
+    ax.hist(predictions['samples'], bins=50, density=True, alpha=0.5, color='green', edgecolor='green', label='Machine')
+
+    mu, std = norm.fit(predictions['real'])
+    x = np.linspace(min(predictions['real'], predictions['samples']), max(predictions['real'], predictions['samples']), 100)
+    p = norm.pdf(x, mu, std)
+    ax.plot(x, p, linewidth=3, color='orange')
+    mu, std = norm.fit(predictions['samples'])
+    x = np.linspace(min(predictions['samples']), max(predictions['samples']), 100)
+    p = norm.pdf(x, mu, std)
+    ax.plot(x, p, linewidth=3, color='green')
+
+    # add gray grids
+    ax.grid(b=True, which='major', color='gray', linestyle='-', alpha=0.4)
+
+    if 'rank' in title.lower():
+        ax.set_xlim(0, 2.0)
+    else:
+        ax.set_xlim(-4.0, 0)
+
     # ax.set_title(title)
-    # larger font
-    ax.set_xticks(x)
-    ax.set_xticklabels(labels)
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel("Density")
     ax.legend()
 
-    fig.tight_layout()
-    plt.savefig(f'figures/{save_name}.pdf')
-    # plt.show()
 
+# Visualize the distributions
+fig, axes = plt.subplots(1, 2, figsize=(10, 5))
+# larger font size
+plt.rcParams.update({'font.size': 16})
 
-def compute_category_entropy(freqs):
-    """
-    Compute the entropy of the token category distribution.
-    """
-    prob = freqs / np.sum(freqs)
-    return -np.sum(prob * np.log2(prob + np.finfo(float).eps))
+# fig.suptitle("Distributions of Metrics for Original and Sampled Data")
 
-
-plt.rcParams.update({'font.size': 24})
-
-# Compute the frequencies for each dataset
-freqs_orig = get_category_frequencies(data["token_categories_original"])
-freqs_sampled = get_category_frequencies(data["token_categories_sampled"])
-
-# remove those categories with 0 frequency (statement_function, module_block, data_structure, other)
-freqs_orig = np.delete(freqs_orig, [4, 5, 6, 8])
-freqs_sampled = np.delete(freqs_sampled, [4, 5, 6, 8])
-
-token_categories = ['keyword', 'identifier', 'literal', 'operator', 'delimiters', 'comment', 'whitespace']
-
-# Plot the distributions
-plot_category_distribution(freqs_orig, freqs_sampled, title="Token Category Distribution", save_name=f"{args.dataset}-{args.dataset_key}-token-category-distribution")
-
-# get the proportions
-freqs_orig = freqs_orig / np.sum(freqs_orig)
-freqs_sampled = freqs_sampled / np.sum(freqs_sampled)
-
-# print the frequencies in a pandas dataframe
-df = pd.DataFrame({'token_category': token_categories, 'human': freqs_orig, 'machine': freqs_sampled})
-df['human'] = df['human'].apply(lambda x: f'{x:.4f}')
-df['machine'] = df['machine'].apply(lambda x: f'{x:.4f}')
-print(df.to_latex(index=False))
-print(args.dataset_key)
-
-
-data_t10 = {
-    'token_category': ['keyword', 'identifier', 'literal', 'operator', 'symbol', 'comment', 'whitespace'],
-    'human': [0.0434, 0.4008, 0.1007, 0.0575, 0.2318, 0.0656, 0.1002],
-    'machine': [0.0462, 0.3643, 0.1086, 0.0543, 0.2217, 0.0954, 0.1095]
+predictions = {
+    'real': orig_ll,
+    'samples': sampled_ll
 }
+_, _, auc_ll = get_roc_metrics(predictions['real'], predictions['samples'])
+vislualize_distribution(predictions, f"Log Likelihood AUC = {auc_ll:.4f}", axes[0], xlabel="Log Likelihood")
 
-data_t02 = {
-    'token_category': ['keyword', 'identifier', 'literal', 'operator', 'symbol', 'comment', 'whitespace'],
-    'human': [0.0416, 0.3975, 0.1100, 0.0617, 0.2310, 0.0586, 0.0997],
-    'machine': [0.0515, 0.3682, 0.1313, 0.0538, 0.2301, 0.0556, 0.1093]
+predictions = {
+    'real': [x for x in orig_log_rank],
+    'samples': [x for x in sampled_log_rank]
 }
+_, _, auc_log_rank = get_roc_metrics(predictions['real'], predictions['samples'])
+vislualize_distribution(predictions, f"Log Rank AUC = {auc_log_rank:.4f}", axes[1], xlabel="Log Rank")
 
-# Function to plot category distributions with adjustments as requested
+plt.tight_layout()
+plt.savefig(f'figures/naturalness_distribution.pdf')
+plt.show()
 
-
-def plot_category_distribution(data1, data2, save_name="token-category-distribution-stacked"):
-    labels = data1['token_category']
-    x = np.arange(len(labels))
-    width = 0.25
-    fontsize = 16  # Increased font size for better readability
-
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8, 8))
-
-    # Plot for t=1.0
-    freqs_orig = np.array(data1['human']) / sum(data1['human'])
-    freqs_sampled = np.array(data1['machine']) / sum(data1['machine'])
-    ax1.bar(x - width/2, freqs_orig, width, label='Human', color='orange', alpha=0.6, edgecolor='orange')
-    ax1.bar(x + width/2, freqs_sampled, width, label='Machine', color='green', alpha=0.6, edgecolor='green')
-    # ax1.text(0.98, 0.98, 'T=1.0', transform=ax1.transAxes, fontsize=fontsize, verticalalignment='top', horizontalalignment='right')
-    ax1.set_xticks(x)
-    ax1.set_xticklabels([])
-    ax1.set_ylabel('Proportion at T$=0.2$', fontsize=fontsize)
-    ax1.legend(fontsize=fontsize)
-    # y tick size
-    ax1.set_yticklabels([0, '', 0.1, '', 0.2, '', 0.3, '', 0.4], size=fontsize)
-
-    # Plot for t=0.2
-    freqs_orig = np.array(data2['human']) / sum(data2['human'])
-    freqs_sampled = np.array(data2['machine']) / sum(data2['machine'])
-    ax2.bar(x - width/2, freqs_orig, width, label='Human', color='orange', alpha=0.6, edgecolor='orange')
-    ax2.bar(x + width/2, freqs_sampled, width, label='Machine', color='green', alpha=0.6, edgecolor='green')
-    # ax2.text(0.98, 0.98, 'T=0.2', transform=ax2.transAxes, fontsize=fontsize, verticalalignment='top', horizontalalignment='right')
-    ax2.set_xticks(x)
-    ax2.set_xticklabels(labels, fontsize=fontsize, rotation=45)
-    # bold the x-axis labels
-    # for label in ax2.get_xticklabels():
-    #     label.set_fontweight('bold')
-    ax2.set_ylabel('Proportion at T$=1.0$', fontsize=fontsize)
-    # ax2.legend(fontsize=fontsize)
-    ax2.set_yticklabels([0, '', 0.1, '', 0.2, '', 0.3, '', 0.4], size=fontsize)
-
-    # plt.xlabel('Token Category', fontsize=fontsize)
-    plt.tight_layout()
-
-    # add grid in gray for both x and y axis
-    ax1.grid(axis='y', linestyle='-', alpha=0.4)
-    ax1.grid(axis='x', linestyle='-', alpha=0.4)
-    ax2.grid(axis='y', linestyle='-', alpha=0.4)
-    ax2.grid(axis='x', linestyle='-', alpha=0.4)
-
-    plt.savefig(f'./figures/category_distribution.pdf')
-    plt.show()
+# use pprint to print the auc results in a more readable format
+import prettytable as pt
+auc_table = pt.PrettyTable()
+auc_table.field_names = ["Metric", "AUC"]
+auc_table.add_row(["Log Likelihood", f"{auc_ll:.4f}"])
+auc_table.add_row(["Log Rank", f"{auc_log_rank:.4f}"])
+print(auc_table)
 
 
-# Now we call the function with the provided data and adjustments
-plot_category_distribution(data_t02, data_t10)

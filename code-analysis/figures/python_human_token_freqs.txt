@@ -19,8 +19,8 @@ self	8
 os	8
 not	7
 elif	6
-x	6
 obj	6
+x	6
 is	5
 None	5
 points	5
@@ -46,9 +46,9 @@ class_dir	3
 train_dir	3
 path	3
 img_path	3
+SIG_DFL	3
 draw	3
 p	3
-SIG_DFL	3
 _create_converter	3
 hasattr	2
 StructType	2
@@ -73,7 +73,18 @@ image	2
 face_recognition	2
 face_bounding_boxes	2
 face_locations	2
+infile	2
+fdopen	2
+dup	2
+sock	2
+fileno	2
+65536	2
 pil_image	2
+__UDT__	2
+DecimalType	2
+dict	2
+key	2
+items	2
 landmarks	2
 model	2
 landmark	2
@@ -81,17 +92,6 @@ landmark	2
 22	2
 27	2
 31	2
-infile	2
-fdopen	2
-dup	2
-sock	2
-fileno	2
-65536	2
-__UDT__	2
-DecimalType	2
-dict	2
-key	2
-items	2
 conv	2
 kconv	2
 vconv	2
@@ -129,6 +129,23 @@ load_image_file	1
 len	1
 !=	1
 1	1
+SIGHUP	1
+SIGCHLD	1
+SIGTERM	1
+# restore the handler for SIGINT,	1
+# it's useful for debugging (show the stacktrace before exit)	1
+SIGINT	1
+default_int_handler	1
+# Read the socket using fdopen instead of socket.makefile() because the latter	1
+# seems to be very slow; note that we need to dup() the file descriptor because	1
+# otherwise writes also cause a seek that makes us miss data on the read side.	1
+rb	1
+outfile	1
+wb	1
+authenticated	1
+client_secret	1
+UTF8Deserializer	1
+loads	1
 Image	1
 open	1
 convert	1
@@ -148,6 +165,14 @@ UTF-8	1
 text_width	1
 text_height	1
 textsize	1
+_type_mappings	1
+get	1
+type	1
+# the precision and scale of `obj` may be different from row to row.	1
+38	1
+18	1
+value	1
+and	1
 _raw_face_landmarks	1
 face_image	1
 landmarks_as_tuples	1
@@ -162,29 +187,4 @@ right_eyebrow	1
 nose_bridge	1
 nose_tip	1
 36	1
-SIGHUP	1
-SIGCHLD	1
-SIGTERM	1
-# restore the handler for SIGINT,	1
-# it's useful for debugging (show the stacktrace before exit)	1
-SIGINT	1
-default_int_handler	1
-# Read the socket using fdopen instead of socket.makefile() because the latter	1
-# seems to be very slow; note that we need to dup() the file descriptor because	1
-# otherwise writes also cause a seek that makes us miss data on the read side.	1
-rb	1
-outfile	1
-wb	1
-authenticated	1
-client_secret	1
-UTF8Deserializer	1
-loads	1
-_type_mappings	1
-get	1
-type	1
-# the precision and scale of `obj` may be different from row to row.	1
-38	1
-18	1
-value	1
-and	1
 _need_converter	1

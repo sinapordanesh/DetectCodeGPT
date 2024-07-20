@@ -24,7 +24,7 @@ if not os.path.exists('build/my-languages.so'):
         [
             './tree-sitter/tree-sitter-python',
             './tree-sitter/tree-sitter-java',
-            './tree-sitter/tree-sitter-php',
+            './tree-sitter/tree-sitter-php/php',
             './tree-sitter/tree-sitter-go',
             './tree-sitter/tree-sitter-ruby',
             './tree-sitter/tree-sitter-javascript',
