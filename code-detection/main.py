@@ -77,8 +77,8 @@ parser.add_argument('--max_todo_num', type=int, default=3)
 args_dict = {
     'dataset': "TheVault",
     # 'dataset': "CodeSearchNet",
-    'dataset_key': "CodeLlama-7b-hf-10000-tp0.2",
-    # 'dataset_key': "CodeLlama-7b-hf-10000-tp1.0",
+    # 'dataset_key': "CodeLlama-7b-hf-10000-tp0.2",
+    'dataset_key': "codeparrot-100000-tp0.2", ### MODIFIED ###
     'pct_words_masked': 0.5,
     'pct_identifiers_masked': 0.75,
     'span_length': 2,
