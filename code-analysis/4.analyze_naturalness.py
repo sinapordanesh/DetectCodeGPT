@@ -64,7 +64,7 @@ parser.add_argument('--max_todo_num', type=int, default=3)
 
 args_dict = {
     'dataset': "CodeSearchNet",
-    'dataset_key': "CodeLlama-7b-hf-10000-tp1.0",
+    'dataset_key': "codeparrot-100000-tp0.2",
     'pct_words_masked': 0.5,
     'pct_identifiers_masked': 0.75,
     'span_length': 2,
@@ -394,7 +394,8 @@ def vislualize_distribution(predictions, title, ax, xlabel):
     ax.plot(x, p, linewidth=3, color='green')
 
     # add gray grids
-    ax.grid(b=True, which='major', color='gray', linestyle='-', alpha=0.4)
+    # ax.grid(b=True, which='major', color='gray', linestyle='-', alpha=0.4)
+    ax.grid(True, which='major', color='gray', linestyle='-', alpha=0.4) ### MODIFIED ###
 
     if 'rank' in title.lower():
         ax.set_xlim(0, 2.0)
