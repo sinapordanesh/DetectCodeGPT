@@ -75,8 +75,8 @@ parser.add_argument('--cut_def', action='store_true')
 parser.add_argument('--max_todo_num', type=int, default=3)
 
 args_dict = {
-    'dataset': "TheVault",
-    # 'dataset': "CodeSearchNet",
+    # 'dataset': "TheVault",
+    'dataset': "CodeSearchNet",
     # 'dataset_key': "CodeLlama-7b-hf-10000-tp0.2",
     'dataset_key': "codeparrot-100000-tp0.2", ### MODIFIED ###
     'pct_words_masked': 0.5,
@@ -108,7 +108,7 @@ args_dict = {
     'pre_perturb_span_length': 5,
     'random_fills': False,
     'random_fills_tokens': False,
-    'cache_dir': "~/.cache/huggingface/hub",
+    'cache_dir': "/home/saman.pordanesh/.cache/huggingface/hub", ###----->>>>> MODIFY THIS DIRECTOYR ADDRESS <<<<<-----###
     'prompt_len': 30,
     'generation_len': 200,
     'min_words': 55,
