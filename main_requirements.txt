@@ -12,3 +12,6 @@ tqdm
 baselines
 accelerate
 tree-sitter==0.20.1
+huggingface_hub
+sentencepiece
+prettytable

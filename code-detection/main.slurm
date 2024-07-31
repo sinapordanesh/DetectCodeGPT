@@ -5,13 +5,13 @@
 #SBATCH --job-name=temp-run
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
-#SBATCH --cpus-per-task=4
-#SBATCH --mem=32gb
-#SBATCH --time=0-1:00:00
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=64gb
+#SBATCH --time=0-24:00:00
 #SBATCH --partition=bigmem
 
 #SBATCH --partition=gpu-a100
-#SBATCH --gres=gpu:1  # Request 1 GPU
+#SBATCH --gres=gpu:2  # Request 2 GPUs
 # ---------------------------------------------------------------------
 echo "Starting run at: `date`"
 # ---------------------------------------------------------------------
@@ -31,4 +31,4 @@ echo "Job finished with exit code $? at: `date`"
 # $scontrol show job jobID
 # $squeue -p partition_name
 
-# current_id: squeue -j 31547557
+# current_id: squeue -j 31551316
