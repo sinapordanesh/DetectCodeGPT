@@ -1,0 +1,4334 @@
+(	23655
+)	23595
+,	11468
+=	10903
+:	9954
+[	8396
+]	8365
+.	7590
+1	5944
+i	4382
+0	3755
+-	3488
+def	3407
+in	3340
+for	3245
++	2832
+n	2681
+int	2653
+return	2460
+if	2449
+input	2342
+range	2291
+x	2195
+*	2148
+sys	2139
+a	1924
+'	1876
+import	1813
+N	1726
+"	1720
+split	1696
+==	1597
+2	1519
+b	1322
+readline	1319
+map	1300
+self	1278
+stdin	1126
+print	1117
+s	1112
+**	974
+j	949
+main	894
+A	892
+10	883
+ans	848
+list	768
++=	753
+from	735
+k	733
+c	708
+y	684
+p	638
+v	632
+%	584
+else	563
+S	562
+d	554
+append	548
+r	523
+len	516
+m	499
+_	489
+while	468
+t	449
+mod	433
+dp	429
+<	419
+//	396
+l	384
+B	384
+True	348
+7	345
+collections	344
+9	328
+math	323
+>	320
+__name__	319
+M	316
+L	310
+lambda	309
+__main__	307
+f	293
+q	287
+K	281
+float	272
+w	262
+setrecursionlimit	258
+3	257
+MOD	255
+C	249
+<=	242
+and	239
+itertools	234
+!=	225
+cnt	224
+solve	221
+h	221
+e	216
+X	215
+W	211
+inf	211
+bisect	211
+/	210
+D	210
+INF	208
+max	206
+u	206
+np	205
+H	201
+heapq	198
+;	193
+write	192
+num	191
+tmp	190
+rstrip	189
+buffer	189
+min	188
+LI	187
+deque	186
+False	177
+res	177
+str	175
+break	174
+count	173
+R	173
+elif	168
+-=	168
+T	168
+I	168
+>=	167
+read	166
+&	158
+abs	149
+P	148
+None	147
+<<	142
+sort	140
+copy	140
+sum	137
+class	137
+5	136
+__init__	132
+4	129
+g	128
+gcd	127
+or	126
+defaultdict	123
+functools	117
+Q	116
+string	115
+x1	114
+ret	113
+6	112
+answer	111
+Counter	110
+resolve	107
+readlines	106
+not	105
+left	105
+stdout	104
+cur	104
+continue	103
+G	103
+y1	102
+data	102
+{	100
+}	98
+array	98
+set	96
+dfs	95
+idx	95
+x2	94
+arr	94
+p1	93
+key	92
+size	92
+strip	91
+root	90
+z	90
+F	89
+temp	87
+Y	87
+right	85
+y2	83
+ 	83
+re	83
+heappop	82
+tuple	81
+heappush	81
+time	81
+LS	81
+add	80
+Yes	80
+\n	79
+No	79
+pow	77
+exit	76
+V	75
+enumerate	74
+->	74
+imag	74
+to	73
+20	73
+fractions	72
+start	71
+index	71
+as	71
+p2	69
+zip	69
+cost	69
+real	68
+sorted	67
+8	67
+dist	65
+eps	64
+random	64
+id	63
+List	63
+sep	62
+end	61
+%=	61
+visited	61
+p0	61
+y0	59
+base	58
+node	58
+find	58
+tree	58
+LI_	58
+parent	57
+i8	57
+LF	57
+edge	56
+que	56
+dd	56
+x0	56
+bisect_left	55
+accumulate	55
+mid	55
+global	54
+*=	54
+reverse	53
+val	53
+100	53
+ord	52
+now	52
+#!/usr/bin/env python3	51
+998244353	51
+numpy	51
+line	49
+sqrt	49
+pop	49
+flush	49
+1.0	49
+pi	48
+#	48
+reduce	48
+E	48
+U	48
+mi	47
+fact	47
+pf	47
+LIST	46
+calc	46
+MI	46
+par	46
+ab	46
+join	45
+lst	45
+>>	45
+queue	45
+rr	44
+check	44
+result	44
+18	43
+numba	43
+mask	42
+c1	42
+inv	42
+YES	41
+memo	41
+nv	40
+njit	40
+NO	39
+ii	39
+combinations	39
+ok	39
+c2	39
+al	39
+used	38
+int64	38
+inpl	37
+permutations	37
+xs	37
+row	36
+func	36
+g2	36
+ddn	36
+pos	35
+fac	35
+60	34
+cards	34
+^	34
+rev	34
+edges	34
+inverse	34
+dx	33
+product	33
+graph	33
+cross	33
+heapify	32
+aa	32
+factorial	32
+g1	32
+s2	31
+13	31
+li	31
+nums	31
+MAP	31
+bisect_right	31
+1000	30
+cache	30
+st	30
+inp	30
+N0	30
+lcm	29
+format	29
+ceil	29
+s1	29
+decode	29
+vs	29
+ar	29
+numbers	29
+o	29
+ng	29
+cap	29
+0.5	28
+bit	28
+ls	28
+mx	28
+@	28
+Z	28
+operator	28
+INT	28
+MAX	28
+v1	28
+n2	27
+run	27
+yield	27
+# -*- coding: utf-8 -*-	27
+dy	27
+next	27
+prev	27
+1000000007	27
+bit_length	27
+lru_cache	27
+pre	27
+|	26
+items	26
+mp	26
+get	26
+complex	26
+decimal	26
+stack	26
+pp	25
+parents	25
+II	25
+AB	25
+iroha	25
+weight	25
+fr	25
+//=	24
+26	24
+flag	24
+px	24
+divmod	24
+mul	24
+args	24
+x3	23
+y3	23
+op	23
+total	23
+typing	23
+tbl	23
+d1	23
+Lsq	23
+n1	22
+upper	22
+length	22
+col	22
+Node	22
+prime	22
+cc	22
+comb	22
+input_int_list	22
+table	22
+itemgetter	22
+z1	22
+r1	22
+merge	22
+bx	22
+by	22
+pro	22
+insert	21
+command	21
+ni	21
+os	21
+limit	21
+digits	21
+dtype	21
+ind	21
+fn	21
+sa	21
+ox	21
+oy	21
+dot	21
+try	20
+ascii_lowercase	20
+is_prime	20
+value	20
+diff	20
+unite	20
+sm	20
+lis	20
+popleft	20
+utf-8	20
+kaijo_memo	20
+gyaku_kaijo_memo	20
+i2	20
+maxi	20
+first	20
+nx	20
+in_nn	20
+ax	20
+ay	20
+di	19
+# coding: utf-8	19
+replace	19
+ri	19
+UnionFind	19
+#import numpy as np	19
+path	18
+is	18
+^=	18
+pass	18
+#!/usr/bin/env python	18
+input_int	18
+groupby	18
+rows_number	18
+zeros	18
+input_value	18
+heights	18
+costs	18
+in_n	18
+L2	18
+sieve	18
+sin	17
+ascii_uppercase	17
+16	17
+sub	17
+list1	17
+50	17
+pattern	17
+py	17
+seq	17
+nxt	17
+Decimal	17
+input_list	17
+.5	17
+floor	17
+i1	17
+d2	17
+in_s	17
+in_map	17
+O	17
+dist2	17
+rec	17
+z0	17
+except	16
+cos	16
+keys	16
+t1	16
+matrix	16
+test	16
+forward	16
+top	16
+sp	16
+ai	16
+tokens	16
+r2	16
+mapt	16
+L1	16
+sx	16
+counter	16
+dp1	16
+power	16
+depth	16
+ma	16
+v2	16
+From	16
+|=	15
+SI	15
+card	15
+mn	15
+LR	15
+int1	15
+seen	15
+DP	15
+rect	15
+ys	15
+rs	15
+a2	15
+rows	15
+12	14
+pw	14
+reversed	14
+tail	14
+b1	14
+cmb	14
+repeat	14
+word	14
+a1	14
+#-*-coding:utf-8-*-	14
+15	14
+bc	14
+pa	14
+acc	14
+aaa	14
+cyclic_cost	14
+judge	13
+state	13
+no	13
+prv	13
+dict	13
+mapint	13
+ns	13
+>>=	13
+point	13
+h1	13
+h2	13
+log2	13
+deepcopy	13
+ary	13
+values	13
+xi	13
+head	13
+assert	13
+ins	13
+nodes	13
+add_edge	13
+item	13
+bl	13
+even	13
+sy	13
+fact_inv	13
+dp2	13
+mat	13
+buff	12
+l1	12
+11	12
+rt	12
+out	12
+tax	12
+acos	12
+step	12
+EPS	12
+m1	12
+bfs	12
+ci	12
+abcdefghijklmnopqrstuvwxyz	12
+open	12
+Input	12
+field	12
+city	12
+dx1	12
+dy1	12
+imos	12
+grundy	12
+input_methods	12
+ANS	12
+theta	12
+order	12
+work	12
+odd	12
+dpb	12
+To	12
+radians	11
+NI	11
+30	11
+divisors	11
+char	11
+strCmd	11
+number	11
+sv	11
+m2	11
+atan	11
+arange	11
+distance	11
+maxsize	11
+yi	11
+AL	11
+color	11
+file	11
+p3	11
+N1	11
+bs	11
+ny	11
+target_stack	11
+rest	11
+nt	11
+ta	11
+curpos	11
+cols	11
+Min	11
+object	10
+extend	10
+all	10
+bin	10
+500	10
+cs	10
+cmd	10
+SegmentTree	10
+2147483647	10
+union	10
+empty	10
+ct	10
+asin	10
+insort_left	10
+dw	10
+sign	10
+p2D	10
+getval	10
+# sys.setrecursionlimit(100000)	10
+FACT	10
+adj	10
+_node	10
+ra	10
+rb	10
+last	10
+todo	10
+sortx	10
+sorty	10
+Fraction	10
+101	10
+_parent	10
+lb	10
+t2	10
+cross3	10
+P1	10
+pb	10
+dx0	10
+dy0	10
+distance_table	10
+mem	10
+ddp	10
+const	10
+pm	10
+db	10
+ss	9
+primes	9
+taro	9
+64	9
+masks	9
+ndp	9
+parse	9
+xy	9
+nu	9
+de	9
+# import numpy as np	9
+dep	9
+hypot	9
+tan	9
+degrees	9
+combinations_with_replacement	9
+insort	9
+ZIP	9
+#mod = 998244353	9
+#decimal.getcontext().prec = 10	9
+update	9
+cumsum	9
+kouho	9
+z2	9
+chr	9
+combi	9
+ikimasu	9
+ina	9
+31	9
+grid	9
+iterate_tokens	9
+in_nl	9
+mark	9
+sz	9
+s_count	9
+t_count	9
+1j	9
+dominoes	9
+source	9
+sums	9
+rank	9
+clipboard	9
+input_method	9
+tin	9
+isTest	9
+19	9
+Vs	9
+dice	9
+da	9
+cmod	9
+o1	9
+count_d	9
+401	9
+now_num	9
+Nsq	9
+w1	9
+100000	8
+raw_input	8
+conv	8
+yes	8
+mins	8
+input_str	8
+lower	8
+adj_matrix	8
+nd	8
+smallest	8
+vi	8
+wi	8
+hanako	8
+datetime	8
+nmax	8
+loop	8
+# 998244353	8
+numbers_list	8
+faci	8
+i4	8
+es	8
+SS	8
+red	8
+TUPLE	8
+route	8
+axis	8
+AC	8
+chain	8
+# type: int	8
+tmp1	8
+beg	8
+pprint	8
+it	8
+iterable	8
+lazy	8
+ie	8
+Edge	8
+1000000	8
+minimum	8
+find_parent	8
+signature	8
+ABC	8
+water	8
+query	8
+base_t	8
+STR	8
+find_root	8
+yen	8
+qy	8
+L0	8
+x_max	8
+x_min	8
+restaurants	8
+ans1	8
+point_size	8
+As	8
+one	8
+sink	8
+half	8
+text	8
+url	8
+keta	8
+ps	8
+ril	8
+aball	8
+fl	8
+read_list	8
+h_point	8
+cumprod	8
+#1 line 1 int	8
+#1 line n int	8
+#1 line 1 string	8
+#1 line n strings	8
+com_n	8
+su	8
+days	8
+file_input	8
+f_i	8
+star	8
+C1	8
+17	8
+buget	8
+dest	8
+timer	8
+sec	8
+xor	8
+buf	8
+priority	8
+c0	8
+max_a	8
+gp	8
+cd	8
+dark	8
+to1d	8
+_n	7
+si	7
+maxs	7
+del	7
+Graph	7
+dj	7
+32	7
+dc	7
+other	7
+~	7
+lvl	7
+cand	7
+BIT	7
+an	7
+# type: str	7
+factorials	7
+finvs	7
+LLI	7
+init	7
+97	7
+hi	7
+Queue	7
+dictionary	7
+accumP	7
+sushis	7
+10000000	7
+b2	7
+term	7
+mini	7
+f_inf	7
+maxheap	7
+score	7
+a0	7
+Max	7
+group	7
+sugar	7
+nmx	7
+uf	7
+_size	7
+gx	7
+gy	7
+qx	7
+do	7
+clist	7
+C2	7
+minedge	7
+list2	7
+fi	7
+area	7
+inlis	7
+results	7
+arrA	7
+read_values	7
+search	7
+FT	7
+lt	7
+com_r	7
+inputEnzan	7
+allProcessList	7
+target_num	7
+ks	7
+Q1	7
+First	7
+words	7
+coeff	7
+tb	7
+ver	7
+info_list	7
+sb	7
+e1	7
+e2	7
+mb	7
+factors	7
+capacity	7
+w2	7
+# -*- coding:utf-8 -*-	6
+NA	6
+div	6
+same	6
+rn	6
+s0	6
+s2list	6
+25	6
+minj	6
+dict1	6
+ward	6
+strTxt	6
+f'	6
+startswith	6
+board	6
+inpl_str	6
+backward	6
+#print(dp)	6
+readinput	6
+0.1	6
+# import pandas as pd	6
+List[int]	6
+gyaku_kaijo	6
+nCr	6
+#from collections import deque	6
+dic	6
+51	6
+int32	6
+dh	6
+abc_str	6
+small	6
+origin	6
+print_elements	6
+binary_search	6
+remove	6
+FACT_INV	6
+ValueError	6
+vv	6
+bool	6
+X1	6
+_graph	6
+smax	6
+dijkstra	6
+minheap	6
+inv_list	6
+old_a	6
+old_b	6
+2500	6
+numba_config	6
+CC	6
+sum_of_digits	6
+candidate	6
+# 元テーブル	6
+#逆元テーブル	6
+#逆元テーブル計算用テーブル	6
+splitlines	6
+lower_divisors	6
+upper_divisors	6
+# s = input()	6
+anum	6
+rui	6
+LI1	6
+fft	6
+val2	6
+win	6
+vy	6
+endswith	6
+MP	6
+#import math	6
+INTM	6
+flg	6
+P0	6
+S1	6
+S2	6
+__getitem__	6
+src	6
+cross_point	6
+ans2	6
+cmp_to_key	6
+bottom	6
+perpro	6
+high	6
+sinceLast	6
+numD	6
+pu	6
+using_method	6
+#+++++	6
+input_clipboard	6
+input_text	6
+input_l	6
+ic	6
+ty	6
+coun	6
+vis	6
+relative	6
+3600	6
+SQRT	6
+ca	6
+yc	6
+circles	6
+qs	6
+checked	6
+is_ok	6
+Mdata	6
+out_list	6
+s_node	6
+men	6
+sigma	6
+yama	6
+current_c	6
+next_c	6
+g_set	6
+d3	6
+d4	6
+d5	6
+d6	6
+XYR	6
+lang	6
+langs	6
+fibo	6
+rightlis	6
+width	5
+Factorial	5
+any	5
+FREE	5
+N2	5
+s1list	5
+127	5
+pl	5
+__str__	5
+minv	5
+LENGTH	5
+str1	5
+subset	5
+com	5
+ans_list	5
+s3	5
+isdigit	5
+prt	5
+nonlocal	5
+pv	5
+appendleft	5
+waru_kazu	5
+/=	5
+LSS	5
+LIR	5
+engines	5
+day	5
+prepare	5
+bb	5
+room	5
+discard	5
+io	5
+BytesIO	5
+IOBase	5
+make_divisors	5
+md	5
+cnt0	5
+big	5
+ele	5
+prev1	5
+_sub	5
+lr	5
+compress	5
+f"	5
+digit	5
+ini	5
+sequence_a	5
+lo	5
+raise	5
+x1y1x2y2_list	5
+X2	5
+Y1	5
+Y2	5
+warshall_floyd	5
+c3	5
+ssum	5
+middle	5
+uv	5
+14	5
+finv	5
+name	5
+ll	5
+check_odd	5
+check_even	5
+rii	5
+q1	5
+10000	5
+length_or_list	5
+did	5
+rx	5
+__parents	5
+#import itertools	5
+# sys.setrecursionlimit(10 ** 6)	5
+#mod = 10 ** 9 + 7	5
+#INF = 10 ** 9	5
+#PI = 3.14159265358979323846	5
+STRM	5
+LISTS	5
+mods	5
+ml	5
+max_	5
+Wt	5
+# h = [int(input()) for _ in rane(n)]	5
+count1	5
+left_bound	5
+sum_	5
+Q0	5
+r0	5
+180	5
+invmod	5
+coin	5
+dists_v	5
+four	5
+kthA	5
+input2	5
+cf	5
+sss	5
+NEAR	5
+y_min	5
+y_max	5
+nine	5
+fa	5
+column	5
+goal	5
+low	5
+V1	5
+V2	5
+br	5
+le	5
+evens	5
+factor	5
+lin	5
+nasu	5
+acts	5
+lists	5
+ravel	5
+cross2	5
+d0	5
+koch_curve	5
+# Python3 2018.7.14 bal4u	5
+nenri	5
+current_num	5
+stars	5
+PS	5
+C0	5
+ctr	5
+odds	5
+Impossible	5
+Data	5
+Xs	5
+gate_list	5
+siz	5
+Bsum	5
+B2	5
+d2t	5
+deck	5
+deckA	5
+deckB	5
+empty_count	5
+info	5
+islands	5
+right_e	5
+parent_or_size	5
+b"	5
+ino	5
+peek	5
+get_distanceSP	5
+js	5
+x_tsum	5
+rotation	5
+lnr	5
+sc	5
+move_count	5
+min_path	5
+visited_list	5
+GD	5
+dq	5
+position	5
+ds	5
+fast_pow	5
+oneday	5
+ab2	5
+stc	5
+us	5
+input_string	5
+dp3	5
+Update	5
+dp_l	5
+is_m	5
+pre_total_sum	5
+i_str	5
+log	4
+debt	4
+1e-8	4
+90	4
+mon	4
+a_end	4
+b_start	4
+prime_list	4
+?	4
+ {}	4
+adjm	4
+space	4
+move	4
+tmpp	4
+dl	4
+remain	4
+counts	4
+maxv	4
+wards	4
+Set	4
+subsets	4
+UserList	4
+Vector	4
+ROWS	4
+COLS	4
+w_list	4
+testcase_ends	4
+rval	4
+deq	4
+topo	4
+start2	4
+rem	4
+XYC	4
+beki	4
+f8	4
+searchsorted	4
+DR	4
+DC	4
+# 処理内容	4
+input_int_map	4
+before_dinner	4
+IR	4
+SR	4
+LSR	4
+kaijo	4
+next_v	4
+# from decimal import Decimal	4
+invs	4
+24	4
+make_power	4
+ones	4
+#空白あり	4
+# input = sys.stdin.readline	4
+b_start_a_end	4
+xl	4
+len_a	4
+begin	4
+per	4
+ifact	4
+isok	4
+g_l	4
+votes	4
+bigger	4
+n_vertices	4
+directed	4
+eats	4
+knd	4
+connected	4
+valid	4
+iter_size	4
+LV	4
+csum	4
+maximize	4
+x4	4
+y4	4
+#!/usr/bin/python	4
+segments	4
+vary	4
+erase	4
+era	4
+y_line	4
+x_line	4
+second	4
+snholder	4
+good	4
+120	4
+i0	4
+deposit	4
+ki	4
+2019	4
+rate	4
+change_time	4
+compile	4
+tmp0	4
+lcm_base	4
+#出力の制限	4
+lim	4
+hantei	4
+in_nl2	4
+in_map2	4
+in_all	4
+lrs	4
+new_dp	4
+p_list	4
+23	4
+n_numbers	4
+str_s	4
+40	4
+xt	4
+yt	4
+inititem	4
+rfft	4
+astype	4
+ref	4
+ttt	4
+400	4
+cv	4
+#from decimal import *	4
+ms	4
+la	4
+powm	4
+pown	4
+right_bound	4
+__a	4
+kaizyo_inv	4
+fixed	4
+gen	4
+rep_S	4
+Apow_list	4
+Bpow_list	4
+Apow	4
+Bpow	4
+fact_list	4
+fact_inv_list	4
+bunshi	4
+restaurant	4
+pat	4
+min_a	4
+max_b	4
+projection	4
+cx	4
+cy	4
+points	4
+val1	4
+not_in_s	4
+two	4
+edgelist	4
+ide_ele	4
+segment	4
+WA	4
+p_sum	4
+cursor	4
+tmp_cur	4
+max_cur	4
+isp	4
+deb	4
+29	4
+v0	4
+pack	4
+places	4
+full	4
+put_row	4
+levels_set	4
+black	4
+cts	4
+TLE	4
+nth	4
+counted_list	4
+n_points	4
+pB	4
+lenFFT	4
+EDGE	4
+DI	4
+tx	4
+mirai	4
+sums1	4
+sums2	4
+MI1	4
+idx_map	4
+resize	4
+reshape	4
+kmemo	4
+_x	4
+times	4
+nameTimeList	4
+arrayS	4
+numberQ	4
+arrayT	4
+merge_sort	4
+quick_sort	4
+bp	4
+vx	4
+expr	4
+Ternary	4
+__add__	4
+eval	4
+person	4
+nm	4
+3501	4
+telescope	4
+serial	4
+dot2	4
+extgcd	4
+memolize	4
+helper	4
+calcMatrixOrder	4
+fib	4
+xc	4
+qsum	4
+data_list	4
+go	4
+min_d	4
+q0	4
+P2	4
+boxes	4
+max_fact	4
+human	4
+op_l	4
+LII	4
+fac_inverse	4
+MAXSHEET	4
+tmp_v	4
+CL	4
+node_size	4
+root_linked	4
+prenum	4
+lowest	4
+_edges	4
+predecessors	4
+Minkowski	4
+__update	4
+1001	4
+deckC	4
+place	4
+# UNION-FIND library	4
+UnionSet	4
+vmax	4
+left_w	4
+offset	4
+inlist	4
+instr	4
+ccw	4
+wbs	4
+q_p	4
+abc	4
+allowed	4
+xxx	4
+passed	4
+vR	4
+sum_x	4
+sum_y	4
+put	4
+nonzeros	4
+OVER	4
+my	4
+maps	4
+Alice	4
+max_a_b	4
+is_leaf	4
+prin	4
+xj	4
+yj	4
+max_length	4
+INVERSE_FACT	4
+_gcd	4
+talk	4
+pow_sum	4
+ab1	4
+dub	4
+half2	4
+head2	4
+Second	4
+opt	4
+pxs	4
+nth_bit	4
+dp_r	4
+vl	4
+res_sum	4
+leftlis	4
+ab_s	4
+roads	4
+E0	4
+mapping	4
+l0	4
+fm	4
+log10	3
+mountains	3
+filter	3
+cars	3
+IN	3
+given_cards	3
+65	3
+base1	3
+dr	3
+most_common	3
+insertionSort	3
+__contains__	3
+strInput	3
+none	3
+b_arr	3
+i_subsets	3
+vec	3
+nn	3
+intersect	3
+frame_height	3
+22	3
+build	3
+diag1	3
+diag2	3
+comps	3
+cmath	3
+p_center	3
+shou	3
+na	3
+numbers_list2	3
+cr	3
+# Generated by 1.1.7.1 https://github.com/kyuridenamida/atcoder-tools  (tips: You use the default template now. You can remove this line by using your custom template)	3
+get_sum	3
+SRL	3
+MSRL	3
+kuchi	3
+tmp_h	3
+atan2	3
+x_sum	3
+in_list_count	3
+sysread	3
+factorization	3
+minDist	3
+argmaxA	3
+a_c	3
+0.0	3
+prod	3
+lst_divisors	3
+dfs_rec	3
+far	3
+prev2	3
+ite	3
+mod_inv	3
+d_r	3
+not_yet	3
+already	3
+sr	3
+int8	3
+len_b	3
+begin2	3
+elements	3
+sh	3
+sw	3
+comp	3
+bn	3
+check_l	3
+num_l	3
+bi	3
+modinv	3
+library_number	3
+monster	3
+Enemy_ran	3
+min_p	3
+bis	3
+RB	3
+minh	3
+kind	3
+ois_sum	3
+ois	3
+rj	3
+__slots__	3
+set_range	3
+window	3
+isinstance	3
+_inf	3
+v_count	3
+hit	3
+blow	3
+print_row	3
+inst	3
+PYDEV	3
+binary	3
+pqheap	3
+premin	3
+is_valid_str	3
+height_a	3
+height_b	3
+NL	3
+years	3
+ten	3
+change	3
+argv	3
+ONLINE_JUDGE	3
+pycc	3
+my_module	3
+export	3
+dig	3
+NMI	3
+Ans	3
+number_of_people_sitting	3
+500000	3
+ifac	3
+# from sys import stdin	3
+# input = stdin.readline	3
+slots_array	3
+#コンビネーションの高速計算　	3
+cntr	3
+elem	3
+ve	3
+vw	3
+# h = list(map(int, input().split()))	3
+cum	3
+hs	3
+temperature_difference	3
+D_tl	3
+possible	3
+Trie	3
+n_a	3
+n_b	3
+po	3
+base_s	3
+Bit	3
+events	3
+discount	3
+networkx	3
+utils	3
+merge_unit	3
+operate	3
+operate_unit	3
+CNT	3
+survivors	3
+srv	3
+takewhile	3
+bit_count	3
+num_pos	3
+unique_num	3
+dy4	3
+dx4	3
+dy8	3
+dx8	3
+inside	3
+sum_of_arithmetic_progression	3
+original_size	3
+Ncum	3
+plus	3
+ESP	3
+ub	3
+r'	3
+links	3
+m0	3
+countdis	3
+mode	3
+Bl	3
+# n = int(input())	3
+# a = list(map(int, input().split()))	3
+# a, b = map(int, input().split())	3
+max_wait	3
+max_wait_order	3
+s_len	3
+ipt	3
+way	3
+kaizyo	3
+safe_h	3
+safe_w	3
+deg	3
+Ai	3
+dot3	3
+is_intersection	3
+qa	3
+r_min	3
+tt	3
+condition	3
+fact_mod	3
+light_bulbs	3
+freq	3
+unit	3
+c1r	3
+ac	3
+pc	3
+m_upper	3
+square	3
+longest_increasing_subsequence	3
+side	3
+TS	3
+differ_by_1bit	3
+invp	3
+invq	3
+hoge	3
+count0	3
+nokori	3
+1200	3
+LI2	3
+MXI	3
+maxpair	3
+pair	3
+set_a	3
+n_	3
+ketawa	3
+wa	3
+alice	3
+bob	3
+cnt_A	3
+cnt_B	3
+children	3
+tmpdic	3
+vec1	3
+vec2	3
+translate	3
+maketrans	3
+111	3
+get_counter	3
+dsorted	3
+ext_euc	3
+RE	3
+lma	3
+tma	3
+yn	3
+hq	3
+arrB	3
+EDGE_INV	3
+rnk	3
+init_val	3
+culm	3
+types	3
+Omitted	3
+platform	3
+ios	3
+__next__	3
+inputFile.txt	3
+#input = sys.stdin.readline	3
+read_index	3
+read_lists	3
+tmp2	3
+gh	3
+gw	3
+make_fact	3
+lsprime	3
+lsprime2	3
+oklist	3
+ketalist	3
+p_table	3
+q_table	3
+to_hash	3
+_X	3
+_Y	3
+numberAndQuontum	3
+Quontum	3
+nameAndTime	3
+areas	3
+section	3
+machedNumber	3
+get_pos	3
+partition	3
+swap	3
+get_parent	3
+search_part2	3
+mm	3
+dice_data	3
+150	3
+ap	3
+_s	3
+DEBUG	3
+xr	3
+split_at	3
+$	3
+# Your code here!	3
+login	3
+node1	3
+node2	3
+bmod	3
+num0	3
+is_integer	3
+kbin	3
+stones	3
+stone	3
+num_list	3
+37	3
+cnts	3
+dist1	3
+pw10	3
+ru	3
+psum	3
+val_list	3
+256	3
+Q2	3
+num_neg	3
+simple_xyz	3
+MODD	3
+200001	3
+op1	3
+op2	3
+op3	3
+ope	3
+alist	3
+a_price	3
+b_price	3
+V0	3
+mxd	3
+link	3
+num_v	3
+LOG	3
+Binit	3
+Badd	3
+B1	3
+IMPOSSIBLE	3
+xdiff	3
+ver1	3
+longest	3
+from_	3
+radC	3
+Dice	3
+new_count_d	3
+buttons	3
+# Python3 2018.7.7 bal4u	3
+path2	3
+59	3
+61	3
+leader	3
+Sset	3
+Slist	3
+inorder	3
+find_pos	3
+preo	3
+l1_start	3
+l1_end	3
+l2_start	3
+l2_end	3
+crs	3
+vector	3
+closest_pair	3
+ass	3
+qq	3
+ans_is_zero	3
+cb	3
+tmp_buy	3
+max_n	3
+child	3
+element	3
+vD	3
+cno	3
+sarch	3
+denominator	3
+x_root	3
+y_root	3
+RR	3
+par_size	3
+sq	3
+dpw	3
+visited_set	3
+GC	3
+covered	3
+read_int_list	3
+n_nodes	3
+p4	3
+files	3
+html	3
+LA	3
+LB	3
+ind_pc	3
+tour_win_rate	3
+n90	3
+slide	3
+outlist	3
+timesum	3
+logB	3
+logBi	3
+dp_new	3
+maxM	3
+maze	3
+correct	3
+has	3
+last_s	3
+second_last_s	3
+pow_table	3
+ans_str	3
+accA	3
+dpL	3
+inv_mod	3
+li2	3
+li3	3
+pref	3
+wall	3
+renritu	3
+ab3	3
+half1	3
+len2	3
+mid_start	3
+offset2_num_period	3
+inl	3
+inm	3
+gg	3
+plain	3
+first_nl	3
+t_copy	3
+WV	3
+csums	3
+ret2	3
+Rmin	3
+Get	3
+total_diff	3
+mc	3
+Matrix	3
+gcdfibo	3
+h3	3
+w3	3
+vx2	3
+pd	3
+xd	3
+yd	3
+angle	3
+initial_dic	3
+E1	3
+E2	3
+mind	3
+deque_a	3
+pqc	3
+rfact	3
+j_count	3
+multi	2
+__main	2
+numOfMoun	2
+sorted_mounts	2
+buff_a	2
+right_triangle	2
+reverseString	2
+roundup1000	2
+_primes	2
+__repr__	2
+_w	2
+epsilon	2
+get_input	2
+EOFError	2
+num_lis	2
+all_count	2
+yoko	2
+tate	2
+cipher	2
+sent	2
+ff	2
+0b0011	2
+divisor_list	2
+member	2
+upd	2
+to_cels	2
+sort_a	2
+solvers	2
+100001	2
+k0	2
+infile	2
+outfile	2
+top_bottom_line	2
+insider_line	2
+read_a	2
+read_b	2
+multiply	2
+show	2
+states	2
+td	2
+#coding:utf-8	2
+minHeapify	2
+dpos	2
+dneg	2
+__lt__	2
+ph	2
+tl	2
+Item	2
+build_tree	2
+max_profit	2
+matA	2
+shuffle	2
+funcPrint	2
+funcReverse	2
+032b	2
+clear	2
+&=	2
+flip	2
+{}:{}	2
+calc_int	2
+push_back	2
+isValid	2
+adjR	2
+adjC	2
+nmin	2
+ansgap	2
+gap	2
+f1	2
+f2	2
+vote	2
+t0	2
+DIFFERENT	2
+vertex	2
+get_k	2
+# \n	2
+ans161	2
+lunlun	2
+r_S	2
+original_n	2
+quo	2
+Xmax	2
+SegTree	2
+X_unit	2
+X_f	2
+istrue	2
+ne	2
+nBad	2
+Any	2
+read_int	2
+exp	2
+max_beki	2
+calc_tairyoku	2
+min_x	2
+max_x	2
+# ignore trailing spaces	2
+max_count	2
+pow_mod	2
+prime_factorize	2
+prime_factors	2
+# coding=utf-8	2
+multi_lcm	2
+perm	2
+sp_sum	2
+ticket_count	2
+rad	2
+month	2
+takahashi	2
+num2	2
+0x33333333	2
+base_calculate	2
+facts	2
+_root	2
+B100	2
+#import	2
+pow2	2
+isFilled	2
+roll	2
+x12	2
+y12	2
+x13	2
+y13	2
+...	2
+tmp_	2
+# import sys	2
+input_list_str	2
+lenght	2
+sieve_of_eratosthenes	2
+#from scipy.sparse import csr_matrix	2
+precompute	2
+bool_	2
+35	2
+va	2
+vb	2
+vc	2
+vd	2
+atc_158a	2
+push	2
+partial_swap	2
+LinearProbingIntSet	2
+_hash	2
+sorted_c	2
+Compress	2
+command_candidate	2
+next_n	2
+pow_l	2
+thr	2
+6000	2
+5500	2
+A_sum	2
+attackcnt	2
+monstercnt	2
+amax	2
+Enemy	2
+gcd_list	2
+Combi	2
+55	2
+rick	2
+WeightedUnionFind	2
+INITIAL_VALUE	2
+get_size	2
+lm	2
+rm	2
+BinaryIndexedTree	2
+lz	2
+count_two_idx	2
+TypeError	2
+all_X	2
+all_Y	2
+ed	2
+1e18	2
+frm	2
+vabx	2
+vaby	2
+vcdx	2
+vcdy	2
+plst	2
+maxsum	2
+xa	2
+ya	2
+xb	2
+yb	2
+speed	2
+9.8	2
+brkSpd	2
+maximum	2
+num_cell	2
+# 入力	2
+replaced	2
+rjust	2
+tiles	2
+min_diam	2
+diam	2
+OK	2
+eary	2
+remove_slimes	2
+list2int	2
+premax	2
+make_modinv_list	2
+connect	2
+# Generated by https://github.com/kyuridenamida/atcoder-tools	2
+s_odd	2
+s_even	2
+s_list	2
+valid_strs	2
+even_ok	2
+odd_ok	2
+amt	2
+i_input	2
+i_map	2
+i_list	2
+mnum	2
+snum	2
+memo0	2
+commands	2
+#import numpy	2
+maxa	2
+safe	2
+inps	2
+obj	2
+numba_compile	2
+globals	2
+posix	2
+exec	2
+from my_module import 	2
+sort_zip	2
+before_color	2
+NLI	2
+now_k	2
+now_bit	2
+1500	2
+int_list	2
+sepalate	2
+solve1	2
+Con	2
+NumA	2
+NumB	2
+lim1	2
+lim2	2
+atc_073a	2
+ball	2
+components	2
+_first_index	2
+_first_idx	2
+IS	2
+partial	2
+f_chain	2
+c_cnt	2
+listtostring	2
+some	2
+moji	2
+p_lst	2
+# N: 処理する区間の長さ	2
+# 区間[l, r+1)の値をvに書き換える	2
+# vは(t, value)という値にする (新しい値ほどtは大きくなる)	2
+mpow	2
+dpf	2
+#!usr/bin/env python3	2
+ai1	2
+# t, a = map(int, input().split())	2
+avg	2
+41	2
+Mod	2
+D_wk	2
+chmax	2
+SSS	2
+RRR	2
+residual	2
+cycles	2
+next_c_id	2
+trie	2
+convolve	2
+irfft	2
+rint	2
+Li	2
+#readlines = sys.stdin.readlines	2
+D2	2
+200	2
+max2	2
+lttr	2
+UnionFindVerSize	2
+q2	2
+pairs	2
+rgb	2
+minimum_dist	2
+list_coordinate	2
+IN_I	2
+IN_S	2
+error	2
+get_GCD	2
+y_	2
+testimony	2
+keta1	2
+quit	2
+week	2
+1e-6	2
+cmp	2
+marks	2
+bares	2
+ry	2
+TI	2
+Si	2
+n0	2
+58	2
+p_dice	2
+xlist	2
+dis	2
+ylist	2
+zlist	2
+sqdis	2
+3000	2
+2018	2
+rain	2
+Tuple	2
+min_	2
+# n, m = map(int, input().split())	2
+count_bigger_than	2
+rl	2
+__N	2
+IL	2
+columns	2
+intervals	2
+l_to_r	2
+r_to_l	2
+matmul	2
+1e-9	2
+45	2
+#     13	2
+##	2
+BC	2
+check2	2
+comb_mod_table	2
+bumbo	2
+total_freq	2
+nCk	2
+c1x	2
+c1y	2
+c2x	2
+c2y	2
+c2r	2
+solve_knapsack	2
+to_digit	2
+bitset	2
+item_num	2
+iter	2
+Vmax	2
+m_rest	2
+memoize	2
+tsp	2
+dists	2
+sp1	2
+full_like	2
+getS	2
+EV	2
+OD	2
+val2idx	2
+chk	2
+differ_by_1bit_all	2
+MinCostFlow	2
+flow	2
+#入力:N,M(int:整数)	2
+Atom	2
+currency	2
+res1	2
+number_of_divisors	2
+105	2
+ARC	2
+_offset	2
+_data	2
+dic1	2
+dic2	2
+bbb	2
+x_max_	2
+x_min_	2
+abc129c	2
+52	2
+73	2
+vn	2
+1000000000	2
+calc_g	2
+decision	2
+starmap	2
+lst_head	2
+# Generated by 1.1.7.1 https://github.com/kyuridenamida/atcoder-tools	2
+doctest	2
+get_children	2
+-1	2
+mab	2
+inverse_lookup	2
+39	2
+rv	2
+ae	2
+i3	2
+klrs	2
+left_camels	2
+right_camels	2
+is_odd	2
+rand	2
+NEG	2
+calcScore	2
+# この日に開催するコンテスト	2
+pA	2
+lA	2
+lB	2
+ips	2
+Bs	2
+arrA0	2
+arrA1	2
+arrA2	2
+fA	2
+fB	2
+arrC	2
+elist	2
+n_plus	2
+lazy_ele	2
+segfunc	2
+first_A	2
+last_Z	2
+1_000_000_007	2
+PrimeUtil	2
+from_iterable	2
+_init_table	2
+_is_prime	2
+#a = int(input())	2
+kyori	2
+temp1	2
+temp2	2
+xx	2
+LLI1	2
+chmin	2
+ans_temp	2
+3100	2
+count_loop	2
+check_1	2
+check_2	2
+check_3	2
+weighted	2
+N3	2
+_add_edge	2
+lsQ	2
+cond	2
+Fxy	2
+tot	2
+is_harshad_number	2
+dividend	2
+get_num	2
+YS	2
+20000	2
+EPSILON	2
+interpolate	2
+outlier	2
+h0	2
+stockFornumber	2
+#----------------for input------------------------	2
+sections	2
+toArea	2
+linearSearch	2
+#----------------for main------------------------	2
+htable	2
+to_int	2
+ints	2
+Pos	2
+get_sec_pos	2
+dX	2
+dY	2
+printAns	2
+Card	2
+check_stability	2
+stable	2
+preorder	2
+dxdy	2
+# sqrt(MAX)	2
+cave	2
+where	2
+lmap	2
+bridge_lengths	2
+unvisited	2
+is_contained	2
+rx1	2
+ry1	2
+rx2	2
+ry2	2
+xe	2
+direct	2
+# Python3 2018.7.15 bal4u	2
+student	2
+c_num	2
+50000	2
+# 時々使う	2
+# from scipy.sparse.csgraph import csgraph_from_dense, floyd_warshall	2
+# from collections import defaultdict, deque	2
+# 再帰の制限設定	2
+il	2
+iln	2
+iss	2
+sl	2
+isn	2
+getenv	2
+LOCAL	2
+pcnt	2
+0x5555555555555555	2
+0x3333333333333333	2
+0x0f0f0f0f0f0f0f0f	2
+0x00ff00ff00ff00ff	2
+0x0000ffff0000ffff	2
+0x00000000ffffffff	2
+judge_prime_num	2
+inner	2
+dis_star	2
+dis_telescope	2
+telescopes	2
+2000	2
+sieve_of_erastosthenes	2
+array_size	2
+segment_line_dist	2
+convert	2
+ques	2
+sublist	2
+ascii_letters	2
+statistics	2
+get_data	2
+list_num	2
+average_num	2
+answer_floor	2
+answer_num	2
+pt	2
+_get_distance	2
+_get_min_distance	2
+bound	2
+th	2
+Positive	2
+s_words	2
+s_word	2
+infac	2
+o2	2
+inner_total	2
+sd	2
+rsplit	2
+1900	2
+#!python3	2
+# input	2
+Dinic	2
+atc_077a	2
+blist	2
+dv	2
+LS2	2
+r_Xs	2
+r_Vs	2
+max_neg	2
+max_pos	2
+x_sheet	2
+y_sheet	2
+a_buy_sheet	2
+b_buy_sheet	2
+xv	2
+energy_left_1	2
+energy_left_2	2
+ws	2
+tool_gate	2
+back_count	2
+forward_count	2
+mxu	2
+atc_093a	2
+a_k	2
+k_b	2
+derive_k	2
+MIN	2
+atc_137a	2
+inv_link	2
+updated	2
+ver2	2
+# curを訪問した直後の処理	2
+namedtuple	2
+DirectedEdge	2
+required_flow	2
+angleC	2
+Chebyshev	2
+move_next_rows	2
+move_prev_rows	2
+move_next_cols	2
+hour	2
+minute	2
+# Python3 2018.7.5 bal4u	2
+sumItUp	2
+reset	2
+pre_set	2
+start_place	2
+fix_place	2
+old_count_d	2
+info_pre	2
+pay	2
+0x7fffffff	2
+page	2
+path1	2
+w_count	2
+e_count	2
+s_alp	2
+offset_table	2
+add_node	2
+post_order	2
+rightRotate	2
+pk	2
+createHeap	2
+maxHeap	2
+inner_product	2
+x_p0	2
+y_p0	2
+x_p1	2
+y_p1	2
+projecter	2
+#couner_clockwise	2
+#clockwise	2
+#online_back	2
+#online_front	2
+#on_segment	2
+parallel_orthogonal	2
+xp0	2
+yp0	2
+xp1	2
+yp1	2
+xp2	2
+yp2	2
+xp3	2
+yp3	2
+get_distanceLP	2
+polygon	2
+is_convex	2
+#常に次の点が下側に	2
+attrgetter	2
+brute_force	2
+find_par	2
+whites	2
+blues	2
+prime_table	2
+q_m	2
+dire	2
+newdp	2
+# print(xxx)	2
+oversea	2
+myindex	2
+default	2
+cvt	2
+vS	2
+oA	2
+_sd	2
+1e+9	2
+vdc	2
+success	2
+new_num	2
+# Python3 2018.7.10 bal4u	2
+ROUND_HALF_UP	2
+calc_area	2
+txt	2
+boo	2
+b3	2
+nc	2
+kcs2	2
+kcs2_1	2
+persimmon	2
+next_yama	2
+numerator	2
+86400	2
+RG	2
+1e-10	2
+getmatnum	2
+#print(x,y,c)	2
+calc_min_path	2
+must_move_count	2
+find_min_length	2
+throw_sum	2
+{{	2
+}}	2
+black_magic	2
+POSSIBLE	2
+_max	2
+a_sum	2
+pivot	2
+tf	2
+n_edges	2
+lu	2
+move_rate	2
+crs1	2
+crs2	2
+dirs	2
+dz	2
+_m	2
+htmls	2
+zi	2
+zj	2
+color_list	2
+exch1	2
+fs	2
+ind_tap	2
+count_pc	2
+fmin	2
+xopt	2
+left_node	2
+battle	2
+to_sets	2
+sA	2
+raw_data	2
+DFS	2
+price	2
+special	2
+dbr	2
+dbl	2
+inputs	2
+Popen	2
+PIPE	2
+Factors	2
+heap	2
+probabilities	2
+delay1_next	2
+time1	2
+offset2_phase	2
+inn	2
+DBG	2
+route0	2
+isEven	2
+mex	2
+json	2
+INFINITY	2
+can	2
+Acount	2
+lreq	2
+sshead	2
+sstail	2
+w0	2
+WVs	2
+abc059a	2
+l_min	2
+#s = input()	2
+Brown	2
+dn	2
+from_a	2
+_matrix	2
+smin	2
+ncomp	2
+10001	2
+gcdcount	2
+getlist	2
+LRX	2
+LX	2
+mf_graph	2
+get_edge	2
+nA	2
+nB	2
+nC	2
+ntodo	2
+nee	2
+LG	2
+DB	2
+XY0	2
+XY1	2
+XY	2
+cap1	2
+solve_2_eq	2
+ratio	2
+# lis_of_lis = [[] for _ in range(N)]	2
+zz	2
+deque_b	2
+deque_c	2
+LRUD	2
+FS	2
+isqrt	2
+ans_int	2
+ab_used	2
+mint	2
+equation	1
+# a < b < c	1
+{} {}	1
+1.05	1
+Eratos	1
+{0:.3f} {1:.3f}	1
+calc_cos	1
+calc_sin	1
+calc_2sin	1
+P:{0:.3f} {1:.3f}	1
+Line	1
+is_over	1
+600	1
+fri	1
+sat	1
+sun	1
+tue	1
+wed	1
+thu	1
+0b0110	1
+bit_add	1
+bit_sum	1
+a_start	1
+h_start	1
+h_end	1
+b_end	1
+make_sets	1
+sets	1
+1440	1
+checkEqual	1
+#    print(i, ii)	1
+a > b	1
+a < b	1
+a == b	1
+{0[0]} {0[1]} {0[2]}	1
+Case {0}: {1}	1
+{:.10f}	1
+S 	1
+H 	1
+C 	1
+D 	1
+grade	1
+80	1
+1000000000000000	1
+buildMinHeap	1
+NOT_FREE	1
+initialize	1
+printBoard	1
+dirc	1
+Puzzle	1
+NSS	1
+compute_prefix_function	1
+kmp_matcher	1
+1009	1
+base2	1
+1013	1
+calculate_hash	1
+calc_hash	1
+v=	1
+,w=	1
+,r=	1
+# ハフマン符号	1
+# https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/15/ALDS1_15_D	1
+HuffmanCoding	1
+encode_table	1
+gen_encode_table	1
+BubbleSort	1
+#入れ替え	1
+##素数判定を行う関数	1
+selectionSort	1
+# 配列の宣言	1
+# 文字列の取得と加工	1
+bubble	1
+CHANGE	1
+matB	1
+matC	1
+swapcase	1
+isalpha	1
+ : 	1
+END_OF_TEXT	1
+funcReplace	1
+MASK	1
+# Bitset 2 - Enumeration of Subsets 1	1
+# Bitset 2 - Enumeration of Subsets 2	1
+{}: {}	1
+pop_back	1
+policy1	1
+policy2	1
+isSteep	1
+make_tanka	1
+#print(num, w_list, i)	1
+# AOJ 1602: ICPC Calculator	1
+# Python3 2018.7.13 bal4u	1
+499	1
+A B C D E F G H I J K L M N O P Q R S T U V W X Y Z	1
+Cube	1
+is_in_cube	1
+dxyz	1
+IDENTICAL	1
+under	1
+make	1
+rdp_trace	1
+moved	1
+history	1
+#print(ar[i],temp)	1
+#合流点の検出	1
+#辺の張り直し	1
+euler_tour	1
+eq_cnt	1
+start1	1
+start3	1
+start4	1
+start5	1
+start6	1
+start7	1
+start8	1
+start9	1
+next_starts	1
+news	1
+neg	1
+# 消費税8%でA円、10%のときB円の消費税が課される	1
+# 税抜き価格は？	1
+# 小数点以下切り捨て	1
+# 税抜きx円	1
+# A = |.08x|	1
+# B = |.10x|	1
+# x >= A / 1.08	1
+# x >= B / 1.10	1
+0.08	1
+1.5	1
+#  print(x, a, b)	1
+set_val	1
+Judge	1
+read_ints	1
+# 多くても 3 つがぎりぎり焼ける位置	1
+1e300	1
+1e-7	1
+# kのべき乗でnを超える最大の冪数を求める	1
+# 最大の冪数から順にとり尽くしていく	1
+# 再帰で書ける？	1
+APPROVED	1
+DENIED	1
+00	1
+# 今見てる数字,次の桁の数字,を受けて	1
+# 今使う,繰り上がり，を返す	1
+# 次が5なら，そのあと5以上ががくればお得，そうでなくとも損しない	1
+# FileName: 	addition_of_big_integers	1
+# CreatedDate:  2020-07-26 14:23:13 +0900	1
+# LastModified: 2020-07-26 14:23:35 +0900	1
+# FileName: 	difference_of_big_integers	1
+# CreatedDate:  2020-07-26 14:25:25 +0900	1
+# LastModified: 2020-07-26 14:25:41 +0900	1
+# FileName: 	multiplication_of_big_integers	1
+# CreatedDate:  2020-07-26 14:26:41 +0900	1
+# LastModified: 2020-07-26 14:26:55 +0900	1
+getcontext	1
+prec	1
+ACL	1
+#経路圧縮？	1
+# Boolでreturn	1
+234139	1
+build_sp	1
+# 移動先の座標の和	1
+#1-indexed	1
+# 各要素を-1倍	1
+# 2 4 3	1
+# 3 4 3	1
+# 2 6 3	1
+z_algorithm	1
+# a は電源タップの口数	1
+# b　は欲しい口数>	1
+# 何個電源タップが必要ですか？	1
+# ただしもとから一つの差し込み口がある。	1
+y_sum	1
+in_list_count_sum	1
+other_list_count	1
+3200	1
+# for change the recursion limit	1
+# to enable variable use in global	1
+# v : current node, f : parent node 	1
+# parents node is already visited	1
+# initalize gloabal variables	1
+# from operator import itemgetter	1
+printout	1
+sprint	1
+# from heapq import heappop, heappush	1
+# from itertools import product, accumulate, combinations, product	1
+# from copy import deepcopy	1
+# from numba import jit	1
+intread	1
+mapline	1
+mapread	1
+popcount	1
+0x55555555	1
+0x0f0f0f0f	1
+0x0000007f	1
+BaseXor	1
+make_base	1
+change_base	1
+size2	1
+#= input()	1
+#= map(int, input().split())	1
+#= list(map(int, input().split()))	1
+#= [input(), input()]	1
+#= [list(map(int, input().split())) for _ in range(N)]	1
+#= [int(input()) for _ in range(N)]	1
+#= {i:[] for i in range(N)}	1
+flags	1
+writeable	1
+ipow2	1
+argmax	1
+# force a_c[0]==a_c[N]==0	1
+signed_area	1
+# convex hull O(n)	1
+vertices	1
+AMBIGUOUS	1
+YYMM	1
+MMYY	1
+2.0	1
+Solution	1
+numSubarrayProductLessThanK	1
+# Bで始まりAで終わらない文字列、Bで始まらずAで終わる文字列、Bで始まりAで終わる文字列の個数	1
+#g = (n//m)*m + (n//m)	1
+#g = (n//m)*(m+1)	1
+#print(cs)	1
+is_keepable	1
+get_diameter	1
+400_000	1
+el	1
+# n以下の素数のリスト	1
+# A[i] = iが素数なら1,その他は0	1
+dist_freq	1
+current_node	1
+# 番兵	1
+# nは偶数、mは奇数	1
+# n+mから2つ選ぶ選び方は	1
+# n:m = 0:2 和は 偶数、選び方はmC2	1
+# n:m = 1:1 和は 奇数 （今回はこれは含めない）	1
+# n:m = 2:0 和は 偶数、選び方はnC2	1
+#from heapq import heappush, heappop	1
+#from scipy.sparse.csgraph import shortest_path, floyd_warshall, dijkstra, bellman_ford, johnson	1
+#from decimal import Decimal, ROUND_HALF_UP, ROUND_HALF_EVEN	1
+nf	1
+nb	1
+# Hに関してbit全探索	1
+#グループに分ける，区切り(末尾)の数字をいれる	1
+998_244_353	1
+gen_Y	1
+# sC2/1, (s-2)C2/2, (s-4)C2/3  ...	1
+gen_X	1
+# sC3*2/1, (s-3)C3*2/2, (s-6)C3*2/3  ...	1
+1, 1, 1, 2, 1, 2, 1, 5, 2, 2, 1, 5, 1, 2, 1, 14, 1, 5, 1, 5, 2, 2, 1, 15, 2, 2, 5, 4, 1, 4, 1, 51	1
+#             print(aa,bb,cc,dd,m1,m2,i)	1
+# Generated by 1.1.7.1 https://github.com/kyuridenamida/atcoder-tools  (tips: You use the default template now. You can remove this line	1
+ir	1
+tile	1
+AAA	1
+BBB	1
+Stack	1
+enqueue	1
+front	1
+dequeue	1
+MaxPQ	1
+swim	1
+get_max	1
+delete_max	1
+LexicalOrderedList	1
+__eq__	1
+__gt__	1
+{} {} {} {} {}	1
+# FileName: 	map_search	1
+# CreatedDate:  2020-07-15 11:12:11 +0900	1
+# LastModified: 2020-07-15 11:20:15 +0900	1
+# FileName: 	map_delete	1
+# CreatedDate:  2020-07-15 11:23:30 +0900	1
+# LastModified: 2020-07-15 11:29:50 +0900	1
+# FileName: 	set_union	1
+# CreatedDate:  2020-06-09 16:02:02 +0900	1
+# LastModified: 2020-06-09 16:04:20 +0900	1
+#import pandas as pd	1
+symmetric_difference	1
+decompress	1
+suffix_array	1
+0 	1
+0 0	1
+# 75	1
+# calc : (a**(-1)) %MOD	1
+10800	1
+calc_ex	1
+# 最大の区間を求める	1
+ifactorial	1
+dam_list	1
+dam_all	1
+# type(x) == type(y) == string	1
+# たたきルート１手１枚増える	1
+# 交換ルートは2手必要	1
+# bisketをA枚にする	1
+NDP	1
+blue	1
+311111	1
+property	1
+_adj	1
+AttributeError	1
+#[美味しさ,種類]	1
+eat_knd	1
+# DSL_1_B: Weighted Union Find Trees	1
+weights	1
+wj	1
+({} [{},{}] {})	1
+# assert 0 <= i <= self.size//2	1
+# DSL_2_D: Range Update Query	1
+DIVIDED	1
+_set_range	1
+#!/usr/bin/env pypy3	1
+# DSL_2_C: Range Search(kD Tree)	1
+islice	1
+sort3	1
+TemplateTree	1
+set_value	1
+gindex	1
+# DSL_2_H: RMQ and RAQ	1
+# Range Minimum Query and Range Add Query	1
+# Lazy propagate segment tree	1
+MAXV	1
+_add	1
+# DSL_2_I: RSQ and RUQ	1
+# Range Sum Query and Range Update Query	1
+_update	1
+63	1
+# DSL_3_C.py	1
+compute	1
+Integral	1
+Window size must be positive	1
+hp	1
+Dijkstra	1
+BellmanFord	1
+add_bi_edge	1
+calcD	1
+has_negative_cycle	1
+4.9	1
+hitBlow	1
+Sunday	1
+Monday	1
+Tuesday	1
+Wednesday	1
+Thursday	1
+Friday	1
+Saturday	1
+paper	1
+__future__	1
+division	1
+print_function	1
+# 文字列置換	1
+Hoshino	1
+Hoshina	1
+#!/usr/bin/python3	1
+OUT	1
+HIT	1
+dir	1
+# solve function	1
+LOOP	1
+# returns a "diameter"	1
+# input one dataset	1
+# process	1
+# judge & output	1
+expression	1
+# Aizu Problem 00151: Grid	1
+# read input:	1
+environ	1
+sample-input.txt	1
+grid_length	1
+diag	1
+# 1<=E<=n-1	1
+#a>b	1
+# n:頂点数, es: 辺uvのコスト	1
+# 探索リスト	1
+# 優先度付きキューを使うと計算量が少なくなるよ	1
+# 最小コストの頂点を取り出し	1
+dg	1
+# 0<=i<j<=n-1	1
+# Ti<T<Tj なるTの個数はj-i-1	1
+# T<Ti, Tj<T なるTの個数はn-(j-i+1)	1
+get_divisors	1
+# ABC142 E	1
+# dp[m][s]:=n個目まででsを開けるために必要な最小コスト	1
+# 次のカギ買った	1
+# やめといた	1
+ans0	1
+Sunny	1
+Cloudy	1
+Rainy	1
+# ABC168F .(Single Dot)	1
+mv	1
+# https://kmjp.hatenablog.jp/entry/2020/05/10/0900	1
+# 数学的な問題	1
+COM	1
+i_row	1
+i_row_list	1
+memo1	1
+nx_a	1
+nx_b	1
+NG	1
+# print(A, now)	1
+# dp[i]:長さiのLISの末尾の数値の最小値	1
+# ans[v]=idx こっちだと頂点vで終わるLISの長さになる。下が正しい	1
+unsafe	1
+_debug	1
+stderr	1
+# import decimal	1
+# decimal.getcontext().prec = 10	1
+# from heapq import heappush, heappop, heapify	1
+# import math	1
+# from math import gcd	1
+# import itertools as it	1
+# import collections	1
+# from collections import deque 	1
+# ---------------------------------------	1
+# time, silver, vertex	1
+2501	1
+1e15	1
+snuke	1
+min_value	1
+hashes	1
+Yay!	1
+:(	1
+ABD	1
+1e20	1
+# size >= n	1
+make_grid	1
+integars	1
+Kr	1
+Con1	1
+# x座標を1,2,...,N	1
+# y座標をN+1,N+2,...,N+N	1
+WarshallFloyd	1
+#O(V^3)で任意２頂点の最短距離	1
+100002	1
+same_line	1
+# i+j=s,i<=a[0],i^j=z となるi,jを探す	1
+# i+j=i^j+2*(i & j)	1
+# s = z + 2*(i & j)	1
+# i & j = (s-z)/2 = d	1
+# z = 2*(i & j) - s = i ^ j	1
+# d = (s-z) / 2	1
+# z = x^y , x&y=0	1
+# d^x,d^yは条件を満たす。d^x+d^y=d^x^d^y + 2*((d^x)&(d^y))= z + 2*d = s	1
+# (d^x)^(d^y)=x^y=z	1
+# (d^x)&(d^y)=d (z & d = 0 のときのみ)	1
+mod_pack	1
+2000001	1
+360	1
+#最大公約数	1
+#print(N)	1
+ans170	1
+get_no_dupes	1
+busted	1
+max_limit	1
+xg	1
+yg	1
+# que->(cost, x, y, direction)	1
+#Solve	1
+i8[:](i8,i8,i8[:])	1
+make_dp	1
+minus	1
+# i以降、a[i]に4^jをかけたところからソート	1
+Grid	1
+geta	1
+co	1
+Christmas	1
+Christmas Eve	1
+Christmas Eve Eve	1
+Christmas Eve Eve Eve	1
+#print(p)	1
+#lレベルバーガーの下からx層に含まれるパティーの数	1
+753	1
+min_abs	1
+dwacon5th_prelims_b	1
+dai	1
+syo	1
+0.006	1
+#cost = [[-1  for _ in range(W)] for _ in range(H)]	1
+# 01-BFS	1
+append_walk	1
+task	1
+append_tele	1
+RRS	1
+SRR	1
+RSS	1
+SSR	1
+cycle_t	1
+koko	1
+#DP containing the information of max value given k items picked in i,j	1
+initval	1
+#self.common=0	1
+<<=	1
+200003	1
+#import random,time	1
+#P=[i for i in range(2**(H-1))]	1
+#random.shuffle(P)	1
+min2	1
+double_naive	1
+Z_algorithm	1
+# 共通接頭辞の長さを返す	1
+# A - Expired?	1
+delicious	1
+dangerous	1
+#print(N, A)	1
+#print(next)	1
+# 最小全域木 O(ElogV)	1
+prims_algorithm	1
+lxy	1
+LazySegmentTree	1
+propagate_above	1
+# A - RGB Cards	1
+IN_LI	1
+IN_LS	1
+main2	1
+#条件が1<=n<=200kのため1から順に数えてlist内を調査した場合の最大値+1をnに記入	1
+#条件から+1まで数えてしまうため、nを+1して調整	1
+search_range	1
+out_range	1
+initial	1
+bust	1
+# 正直者のパターンをbit全探索	1
+160	1
+cura	1
+curb	1
+#from collections import defaultdict	1
+# 各数字がｓ中に最後にあらわれる位置。	1
+# ｓの各桁でその桁以降にある数字の種類。	1
+infinity	1
+SUN	1
+MON	1
+TUE	1
+WED	1
+THU	1
+FRI	1
+SAT	1
+# ライブラリ参照https://atcoder.jp/contests/practice2/submissions/16580070	1
+400000	1
+\d+$	1
+labels	1
+#.	1
+fc	1
+ec	1
+Ti	1
+# 'U'	1
+# 'R'	1
+# 'D'	1
+# 'L'	1
+rotate_dice	1
+enumerate_dice	1
+dice_graph	1
+__ranks	1
+# ?±?????????????????????????????????°??????	1
+# ????????????????????°?????????????????????????????????????????¨????????????	1
+# ??????????????????????????¨????¨?????????????????????§????´?????°???????????????????????????°??????	1
+#print(A,B,index)	1
+bisect_right_rev	1
+# map(int, input().split())	1
+# limitの最大値（limitなし）	1
+# dp[iまでみた][前のj個が連続]	1
+# 直前にK個連続しているときは追加できない	1
+# E - Virus Tree 2	1
+# region fastio	1
+BUFSIZE	1
+8192	1
+FastIO	1
+newlines	1
+_fd	1
+fileno	1
+writable	1
+# '#.'という箇所が1箇所でもあるとダメなので、ある場所に黒が現れたら	1
+# 、そこから右は全て黒にならないといけない	1
+# dp[i][j] = a1~aiを塗った時に、赤で塗った和をjにする方法数	1
+# dp[i][j] = a1~aiの中からいくつか選んで、和をjにする方法数	1
+# 1010...	1
+# 0101...	1
+count2	1
+# even:1	1
+# odd:0	1
+# 1-0-1-0-1 の配列にする. 両端は1にする	1
+#以上の物の個数がK以下	1
+#以上の物の個数がKより大きい	1
+ans_que	1
+# g1[i]=i! % mod　:階乗	1
+# g2[i]=(i!)^(-1) % mod　:階乗の逆元	1
+add_	1
+show_	1
+sub_sum_	1
+#A:0 C:1 G:2 T:3	1
+pow4	1
+# def LF(): return [float(x) for x in sys.stdin.readline().split()]	1
+factorize	1
+# 解説AC	1
+hpq	1
+#from scipy.sparse.csgraph import dijkstra	1
+nway	1
+#sys.setrecursionlimit(10**6)	1
+SL	1
+# a,b,c == k//2 + p*k を満たすとき	1
+# a,b,c == p*k を満たすとき	1
+inv_2	1
+anss	1
+n_pair	1
+# permutationになっている極小区間に分ける	1
+to_left	1
+to_right	1
+# [0, i) の要素の総和を返す	1
+SW0	1
+ABCDEFGHIJ	1
+SW1	1
+abcdefghij	1
+Bi	1
+# seishin.py	1
+Gx	1
+RollingHash	1
+qb	1
+r_max	1
+dpi	1
+-0123456789	1
+#   12  11	1
+# 13  06  13	1
+#   05  04	1
+# 10  03  09	1
+#   02  01	1
+# 13  00  13	1
+#   08  07	1
+condition2	1
+# nCr=n!/r!(n-r)!で計算する関数（計算量n*logMOD）…n,rを変えつつ何度も実行する場合	1
+# 各x!および逆元はテーブルで持っておく	1
+#print(M,term,bunshi,bumbo)	1
+# print(dfs(0,-1,0))	1
+pbit	1
+zfill	1
+#p2D(aa)	1
+# 人iが勝てる相手をbitで管理する	1
+#pbit(win,n)	1
+# dpl[i]...[j,i]の範囲で優勝できるjをbitで	1
+# dpr[i]...[i,j]の範囲で優勝できるjをbitで	1
+dpl	1
+dpr	1
+pate	1
+light_on	1
+bulb	1
+turned_switch	1
+# ABC128 D	1
+# 連続する k(K,K-1,...)個の宝石をとる	1
+# K-k個まで捨ててよい	1
+DD	1
+get_cross_point	1
+{:.10f} {:.10f} {:.10f} {:.10f}	1
+bitdp	1
+item_v	1
+item_w	1
+Vsum	1
+# http://www.geocities.jp/m_hiroi/light/pyalgo65.html	1
+isinf	1
+__createtable	1
+mask64	1
+hash	1
+0x03F566ED27179461	1
+from_dtype	1
+# input aliases	1
+getN	1
+getList	1
+getZList	1
+divide	1
+# 縦ドミノ	1
+# 横ドミノ	1
+# 2は素数でないとして扱って	1
+# imosで値を入れないといけない場所	1
+# 1手でとれるペアを見つける：最大マッチング	1
+# 奇点から偶点に辺を貼る	1
+INPUT	1
+Dijkstra_heap	1
+# 始点sから各頂点への最短距離#始点sから各頂点への最短距離	1
+# まだ使われてない頂点の中から最小の距離のものを探す	1
+# memo[i] := 色がiであるような石jについてのdp[j]の値の合計値（適宜更新する）	1
+_nthA	1
+ntha	1
+MinCost	1
+mincost	1
+prev_v	1
+prev_e	1
+zip_longest	1
+fillvalue	1
+# 各連結成分の大きさ	1
+Heisei	1
+TBD	1
+amount	1
+JPY	1
+neighborhood	1
+dist_calc	1
+res2	1
+2800	1
+AGC	1
+A[a-z]+C[a-z]+	1
+fullmatch	1
+# Segment tree (+)	1
+_op	1
+_e	1
+search_ab	1
+# print('a', cursor)	1
+search_ba	1
+# print('b', cursor)	1
+nearlist	1
+# 隣接リスト	1
+# 幅優先探索  # キュー	1
+guchoku	1
+Bad	1
+Good	1
+y_max_	1
+y_min_	1
+# dp[i]:どんぐりをi個交換した時の最大獲得どんぐり	1
+#if a>b:continue	1
+38	1
+https://atcoder.jp//contests/abc129/tasks/abc129_a	1
+https://atcoder.jp//contests/abc129/tasks/abc129_b	1
+# a_n = r * a_{n-1} + b * n + c	1
+Aoki	1
+Takahashi	1
+Four	1
+Three	1
+with	1
+MARCH	1
+U1	1
+# N-1行目を埋めたあと、2個ずつ	1
+# [0, ind), [ind, L-1]	1
+testmod	1
+#unionfind	1
+make_levels	1
+levels_dict	1
+sqsum	1
+anslis	1
+# tenka1-2018C - Align	1
+# 高橋くんの場合	1
+mincos	1
+hen	1
+hen2	1
+Hello 	1
+World	1
+https://atcoder.jp//contests/abc111/tasks/abc111_a	1
+# if x is not found	1
+num_of_nth_often	1
+v_even	1
+v_odd	1
+# s[0]=1,s[-1]=0,s[k]=s[n-k-1]は必要	1
+https://atcoder.jp//contests/abc110/tasks/abc110_a	1
+War	1
+No War	1
+xyp	1
+caldp	1
+#p = (i1 + i2) ** 2 - (i1 * i2) + i3 * (i1 + i2 + i3)	1
+from10to2	1
+from2to10	1
+# ベースの嬉しさは sum_i min(Li, Ri)	1
+# (1) Li > Ri なるラクダ	1
+#   なるべく先頭側に寄せることで追加の嬉しさを獲得できる	1
+# (2) Li < Ri なるラクダ	1
+#   なるべく末尾側に寄せることで追加の嬉しさを獲得できる	1
+# => (1), (2) それぞれで追加できる嬉しさの最大値を求めてベースに足す	1
+# (1)	1
+# Ref: https://betrue12.hateblo.jp/entry/2020/07/12/060026	1
+generate_points	1
+# Lagrange補完するためのデータ点を計算	1
+comb_1	1
+# (n+4)_C_4	1
+comb_2	1
+# (2n+10)_C_10	1
+AC x 	1
+verbose	1
+200000	1
+choices	1
+#        print (ret)	1
+POS	1
+4100000	1
+#1,2~8,9,both	1
+Combination	1
+1e12	1
+shift	1
+DisjointSetUnion	1
+FenwickTree	1
+#値の更新	1
+_sum	1
+divideArr3	1
+convolveArr	1
+convolveMOD	1
+csr	1
+scc_graph	1
+# 0～N : X_i	1
+# N+1～2N: Y_i = ￢X_i	1
+sa_naive	1
+sa_doubling	1
+lazysegmenttree	1
+reflect	1
+propagate	1
+fts	1
+its	1
+10000000000	1
+argsort	1
+2010	1
+factor_iter	1
+factorize_by_sieve	1
+#s = input()		1
+### 素数の逆元とCombination	1
+# 必要なテーブルサイズ	1
+# ai+b==0 mod M <=> i==-b*a^(-1) <=> i^(-1)==-b^(-1)*aより	1
+#sからの距離のリスト	1
+#Trueなら未確定	1
+#こいつがheapqになる	1
+#重みと行先を1つの変数で表してる！	1
+#miraiがTrueのやつ(未確定なやつ)から最小距離のものをさがす	1
+#距離が小さいものから"確定"していく	1
+#最小距離の頂点	1
+#その距離	1
+keyence	1
+HC	1
+WC	1
+# 	1
+#print(sums)	1
+#print(keys)	1
+ndp0	1
+ndp1	1
+# メイン関数	1
+# 入力データ	1
+# dpテーブルの作成	1
+#Dp such that when the first takes the turn with i remaining stones,	1
+#0->Second, 1->First wins	1
+# 標準出力による質問 interactive	1
+210	1
+? %s	1
+#     print("hoge")	1
+# r, ..., r+n-2に同数個	1
+#permutationsは順列を列挙	1
+RangeSpannedGraph	1
+_weighted	1
+_reflect	1
+#a,bの最小値を記憶してくれてる？	1
+# x分以内に食べきれるための修行回数はK回以下か	1
+#駅x時間ｔで移動するのにかかる時間	1
+primels	1
+Left	1
+Balanced	1
+Right	1
+#データ加工	1
+#0->x 1->y	1
+k_fix_way	1
+centroid	1
++/	1
+1e-5	1
+ex	1
+ey	1
+ez	1
+shellSort	1
+gaps	1
+776591	1
+345152	1
+153401	1
+68178	1
+30301	1
+keisan	1
+schedule	1
+listForReturn	1
+delete	1
+calcAreas	1
+toDelta	1
+\\	1
+#---------------for input--------------------	1
+numberN	1
+#---------------for input----------------------	1
+match_count	1
+Is_ToPut	1
+makeCache	1
+fabs	1
+] 	1
+Stable	1
+Not stable	1
+calcurate_cost	1
+get_depth	1
+rooted_tree	1
+get_node_type	1
+leaf	1
+internal node	1
+preorder_list	1
+bellman_ford	1
+# AOJ 1172: Chebyshev's Theorem	1
+250000	1
+# for 2	1
+# for odd num only	1
+195	1
+%0	1
+#! cat input | python3 main.py	1
+debug	1
+phase	1
+sol	1
+fail	1
+1e8	1
+c_list	1
+# cycle	1
+# direction	1
+#ｘは変更前税率、ｙは変更後税率、ｓは変更前税込み合計	1
+# print('@', *args)	1
+removeAll	1
+removed	1
+sum1	1
+turn	1
+core_islands_num	1
+diameter	1
+end_point	1
+# AOJ 1200: Goldbach's Conjecture	1
+# Python3 2018.7.19 bal4u	1
+32770	1
+# > 2^15	1
+182	1
+# sqrt(MAX)+1	1
+add_area	1
+ye	1
+tanri	1
+fukuri	1
+# AOJ 1141: Dirichlet's Theorem on Arithmetic Progre...	1
+make_pieces	1
+R_next	1
+L_next	1
+# 組み込み関数input()は標準入力から読み込まれた1行を返す．	1
+monsat	1
+__int__	1
+__neg__	1
+__mul__	1
+Ternary(%d)	1
+# n= 人数　p = 最初に入っている個数	1
+Union_find	1
+# time, speed, where, pre	1
+# 次に進める	1
+# r位置にxを追加	1
+nl	1
+addFlag	1
+# Union Find	1
+# xの根を求める	1
+# xとyの属する集合の併合	1
+# x < y にする	1
+#長方形の最も左の点	1
+#長方形の最も右の点	1
+is_bipartite_graph	1
+cal	1
+3500	1
+# kはm桁	1
+euler_phi	1
+biggcd	1
+positions	1
+1121	1
+solve_cos	1
+# -*- coding: utf-8 -*-/	1
+# ??\???	1
+# 0 0 0??§??????	1
+# 1 ~ n????????????????????§??¨???	1
+# ????????????????????¨????????????????????¬?????????	1
+# ??????1?????????????????§	1
+# ?????????????????????m???????´??????????	1
+motomeruyuo	1
+2001	1
+primeTable	1
+get_value	1
+KeyError	1
+decl_prog	1
+(\w)\[(\d+)\]	1
+polygon_cont	1
+BASE	1
+%02d:%02d:%02d	1
+ts	1
+ALL	1
+bALL	1
+ti	1
+min1	1
+S0	1
+SM	1
+construct	1
+nds	1
+# return [g, x, y]	1
+# g = gcd(a, b)	1
+# x, y satisfies a x + b y = g	1
+# eq0: x = a0 (mod m0)	1
+# eq1: x = a1 (mod m1)	1
+# returns [xt, mod] such that x =	1
+#! /usr/bin/env python3	1
+PotentializedUnionFind	1
+abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ	1
+llcs	1
+get_data_list	1
+count_num_under_average	1
+reverse_sorted_num_list	1
+reverse_sorted_income_list	1
+population	1
+empty_index	1
+empty_nums	1
+#num を増やしていって、aの解が整数になるかをチェックする	1
+cj	1
+closest_pair_distance	1
+# axis: x; 1, y; 2	1
+lcs	1
+pre_lcs	1
+pre_lcs_len	1
+ABCDEFGHIJKLMNOPQRSTUVWXYZ	1
+entropy_if_smallest	1
+ans_h	1
+line_cross_point	1
+bisector	1
+Zero	1
+#mod should be prime number	1
+#using homogeneous_product(n,r), max_fact ≧ max(n+r-1)	1
+isnotxyz	1
+invert	1
+sort_insertion	1
+2000000001	1
+#iからj人乗せた中で最小座布団	1
+=7	1
+# ! /usr/bin/env python	1
+# INF =  float("inf")	1
+# mod = 998244353	1
+# Dinic's algorithm	1
+# 始点ノードidx，終点ノードidx，容量をinput	1
+#あるbより小さいaの数	1
+count_a	1
+count_c	1
+5000	1
+#空白なし	1
+# Aj-Ai == Bj-Bi のとき、	1
+# (Ai,Bi) を選んだときの盤面が'よい' ⇔ (Aj,Bj) を選んだときの盤面が'よい'	1
+# Ai = i回以下マシンを稼働することで、全て黒く塗られるような順列の個数	1
+700	1
+# Problem: https://atcoder.jp/contests/arc096/tasks/arc096_a	1
+# Python 2nd Try	1
+# from collections import defaultdict	1
+# import heapq,copy	1
+# from collections import deque	1
+# Const	1
+MAXSIZE	1
+MINSIZE	1
+solver	1
+ab_price	1
+#左回り用	1
+#右周り用	1
+energy_right_1	1
+energy_right_2	1
+#sys.setrecursionlimit(10 ** 6)	1
+#print(to)	1
+#n/k - n/(k+1) >= 1となる最大のkを求める。ただしn>=2	1
+#A*B/k - A*B/(k+1) >= 1となる最大のkを求める	1
+#print(A, B, k, (A*B-1)//(k+1))	1
+bell	1
+#fin=open('in','r')	1
+#input=lambda:fin.readline().strip()	1
+#sum of -((x-j)^(p-1)-1)	1
+# (-j + x)^(p-1) = sum((-j)^i * x^(p-1-i) * binom(p-1,i))	1
+Bssum	1
+#dp[i][j]	1
+get_cycle	1
+# root?????£????????????????????????????????§?????????????????????	1
+# ?????°????????§???????????????????????????	1
+checking	1
+# curからvへ訪問する直前の処理	1
+# 未訪問なら再帰探索する	1
+# nxtの探索が終了した直後の処理	1
+# GRL_4_A: Path/Cycle - Cycle Detection for a Directed Graph	1
+Digraph	1
+has_cycle	1
+FordFulkerson	1
+trace_back	1
+min_cost_flow	1
+MaxFlow	1
+_level	1
+_iter	1
+Daise	1
+__move_next	1
+__move_prev	1
+{0} {1}	1
+{0}:{1}:{2}	1
+data1	1
+get_min_value_in_row	1
+is_max	1
+# AOJ 1006: Boring Commercials	1
+{0:>3}	1
+Case {}:	1
+up	1
+#        print("{}	1
+dominos	1
+rpn	1
+idsu	1
+idsuc	1
+#根を見つける、繋ぎ直す	1
+#x,yの含むグループを併合する	1
+suffle	1
+# A106633	1
+# AOJ 1028: ICPC: Ideal Coin Payment and Change	1
+OP	1
+Page	1
+Button	1
+Buffer	1
+pointer	1
+contents	1
+# AOJ 1055 Huge Family	1
+# AOJ 1058 Winter Bells	1
+# AOJ 1060: No Story	1
+# Python3 2018.6.8 bal4u	1
+1000004	1
+ptbl	1
+43	1
+47	1
+53	1
+67	1
+71	1
+79	1
+83	1
+89	1
+103	1
+107	1
+109	1
+113	1
+131	1
+137	1
+139	1
+149	1
+151	1
+157	1
+163	1
+167	1
+173	1
+179	1
+181	1
+191	1
+193	1
+197	1
+199	1
+211	1
+223	1
+227	1
+229	1
+233	1
+239	1
+241	1
+251	1
+257	1
+263	1
+269	1
+271	1
+277	1
+281	1
+283	1
+293	1
+307	1
+311	1
+313	1
+317	1
+331	1
+337	1
+347	1
+349	1
+353	1
+359	1
+367	1
+373	1
+379	1
+383	1
+389	1
+397	1
+409	1
+419	1
+421	1
+431	1
+433	1
+# AOJ 1059 Mysterious Onslaught	1
+2000000	1
+XorSum2	1
+# 尺取法インデックス	1
+# 尺取法	1
+ruiseki	1
+celi	1
+5000000	1
+direction	1
+# print(l,r,cnt,xor)	1
+dsu	1
+# https://atcoder.jp/contests/agc024/tasks/agc024_b	1
+# 解法 -> 最長の連続部分列を求めればよい	1
+# {1,3,4,5,2,7,6} => {3,4,5}	1
+tempc	1
+frombuffer	1
+subtable	1
+# print(Slist)	1
+UF	1
+num_group	1
+binaryTree	1
+treelist	1
+binarysearchtree	1
+leftRotate	1
+setKeys	1
+lk	1
+# ????????????b???????????????a??????????????´????????£?°???±???????????????????????????	1
+extract	1
+{:.10f} {:.10f}	1
+CCW	1
+COUNTER_CLOCKWISE	1
+CLOCKWISE	1
+ONLINE_BACK	1
+ONLINE_FRONT	1
+ON_SEGMENT	1
+#内積0の場合直行している	1
+#外積0の場合平行	1
+# p0..p3がそれぞれ座標になっている	1
+#内積	1
+#外積	1
+get_distance	1
+triangle	1
+{:.1f}	1
+convex_hull	1
+#上側を入れていく	1
+#下側を入れていく	1
+# http://www.prefield.com/algorithm/geometry/convex_diameter.html	1
+convex_diameter	1
+maxd	1
+norm	1
+## どの桁が1になっているかをチェックするために2進数の各桁をループ	1
+## i >> jで確認したい桁を一番右までずらして1と論理積をとって「選択」している要素を確認	1
+Recording	1
+# チャンネルごとにimos配列	1
+# imos	1
+# Atcoder problem Solving	1
+# Code Festival Team Relay	1
+# case_impossible	1
+# case_possible	1
+MX	1
+300	1
+primes_small	1
+primes_large	1
+fact_table	1
+Unionfindtree	1
+# 親を探す	1
+# x,yを繋げる	1
+# 根	1
+# 根からの距離	1
+# BFS	1
+sum_A	1
+sum_q_p	1
+to_remove	1
+# 同じ文字を2つつなげると回文になるので、最低限隣り合う文字が全部異なる必要がある。	1
+# また、abaのように、2つ先で一致してしまってもこれも回文になるのでNG。	1
+# となると結局「abcabc...」みたいに巡回する形の文字列しか回文回避の方法はない。	1
+# こういう巡回する形の文字列を作るには、a,b,cの数の最大と最小の差が1以内であればOK。	1
+#left or right	1
+solveequation	1
+#edge=[[to,dire,id]...]	1
+kaibun	1
+cnt_zero	1
+date	1
+timedelta	1
+buy	1
+sell	1
+buy_memo	1
+sell_memo	1
+tmp_buy_memo	1
+odd_even	1
+chi	1
+clo	1
+pyr	1
+CODEFESTIVAL2016	1
+# pre+1以上の数値を何回か引き算してxを1以上pre以下にする	1
+# 引き算の回数はなるべく多く	1
+__setitem__	1
+# 要素が入ってない場合の list.index の定義	1
+okflag	1
+linput	1
+#vD += [".","#"]	1
+#res = 0	1
+1001001001	1
+#sT = "No Yes".split()	1
+#print(sT[res])	1
+sf	1
+restore	1
+acc_S	1
+acc_T	1
+#if i==-n: return 0	1
+#print(a)	1
+Que	1
+emp	1
+111223111223	1
+#n, *d = map(int, open(0).read().split())	1
+# dream dreamer erase eraser 	1
+# AOJ 1065 The House of Huge Family	1
+# AOJ 1069: Squid Multiplication	1
+# AOJ 1100: Area of Polygons	1
+ROUND_HALF_EVEN	1
+quantize	1
+rounding	1
+TextEditor	1
+cur_w	1
+cur_c	1
+queries	1
+forward char	1
+forward_char	1
+forward word	1
+forward_word	1
+backward char	1
+backward_char	1
+backward word	1
+backward_word	1
+delete char	1
+delete_char	1
+delete word	1
+delete_word	1
+# AOJ 1102: Calculation of Expressions	1
+# AOJ 1103: Board Arrangements for Concentration Gam...	1
+numchange	1
+yaxis	1
+xaxis	1
+STOP	1
+RIGHT	1
+LEFT	1
+movequeue	1
+# AOJ 1106: Factorization of Quadratic Formula	1
+# AOJ 1108: A Long Ride on a Railway	1
+# AOJ 1110: Patience	1
+# Python3 2018.7.8 bal4u	1
+max_size	1
+get_max_rectangle	1
+max_rectangle_right	1
+check_expandable	1
+check_fill_ones	1
+count_characters	1
+kcs	1
+anslist	1
+find_point	1
+# 二頂点(x1,y1),(x2,y2)を円周上にもつ時の半径1の円の中心	1
+# (mx,my)+-(k/L)(-y2+y1,x2-x1)	1
+# aa	1
+# 1 2 4 5	1
+# 2 3 1 6	1
+# 3 4 2 7	1
+# 4 1 3 8	1
+# 5 8 6 1	1
+# 6 5 7 2	1
+# 7 6 8 3	1
+# 8 7 5 4	1
+tc	1
+scc	1
+rdfs	1
+J	1
+rotate	1
+HopcroftKarp	1
+21	1
+DSUWeighted	1
+wt	1
+#assert 0 <= a < self.n	1
+Even	1
+Odd	1
+#左上を(x1,y1)右下を(x2,y2)にしてmatの中の左上~右下の領域の和を算出	1
+#pprint(dpw)	1
+#pprint(dpb)	1
+# from itertools import product, takewhile	1
+is_movable	1
+#左上を(x1,y1)右下を(x2,y2)にしてmatの中の左上~右下の領域の和をdpから算出	1
+impossible	1
+# XとYをつなぐ辺の作成	1
+n_x	1
+n_y	1
+Borys	1
+# でつoO(YOU PLAY WITH THE CARDS YOU'RE DEALT..)	1
+# ...B の直後に A を a 個、B を b 個置けるかどうか	1
+fr'	1
+match	1
+48	1
+1431655765	1
+858993459	1
+252645135	1
+16711935	1
+65535	1
+# 「全てに1を足して、特定のものからN+1を引く」で等価な操作になる	1
+#print(loop)	1
+# A - Sharing Cookies	1
+Possible	1
+inved	1
+# C - Splitting Pile	1
+spell	1
+# sys.stdin = open('e1.in')	1
+read_str_list	1
+read_str	1
+total_in	1
+total_out	1
+r_adj	1
+# A - ringring	1
+stern_brocot	1
+lx	1
+ly	1
+difference	1
+string_to_complex	1
+pegs	1
+mz	1
+# from urllib.parse import urljoin	1
+has_ts	1
+Primes	1
+book_pos	1
+studens	1
+shelf	1
+rotateX	1
+rotateY	1
+rotateZ	1
+# forward - forward	1
+exch2	1
+# forward - reverse	1
+exch3	1
+# reverse - forward	1
+# 始点を半径0のバリアとみなす	1
+# 終点を半径0のバリアとみなす	1
+# Graph[i][j] = バリア i からバリア j までの'距離'	1
+# ダイクストラ法	1
+# dist[i] = バリア N からバリア i への最短'距離'	1
+### 約数列挙	1
+data_pc	1
+data_tap	1
+count_tap	1
+# print(now_num)	1
+delete_list	1
+bin_data	1
+# A - 1D Matching	1
+calculate_cables_length	1
+# sort A, B and the lines between A, B shouldn't cross	1
+# cross <-> not min distance	1
+# cf16-exhibition-final-openB - Inscribed Bicycle	1
+# petrが、Pをx、Qを1-xで選ぶとする。	1
+scipy	1
+optimize	1
+disp	1
+xtol	1
+nonzero	1
+right_node	1
+# L：左に曲がるインデックス集合	1
+# R：右に曲がるインデックスのヒープ	1
+n3	1
+n4	1
+#problem3	1
+#入力は2**N個からなる	1
+10801	1
+# 右端ごとの最高得点を管理。まずは 1 回目。	1
+is_empty	1
+# 偶奇をあわせて寄せていくだけ	1
+INFL	1
+# O(M log B)	1
+chds	1
+# 10^keta の位を n にできるか	1
+# 1～n番目の問題を全部解いた時の点数が初めてN点以上になるnを求める	1
+# 後は間を抜いて、ジャストN点になるよう調整していく	1
+# 1-indexで扱うので0番目は使わない	1
+# 2周分	1
+drop	1
+train	1
+#dp[i][j][k]=カードのi番目までからjこまでを取ってxorの値をkにする方法	1
+#dp[i][j]=="inf" (i<jの時)	1
+# (始点、三角形)の組に対して、3K番目を求めればよい	1
+# 答 < x である。	1
+# area = 2sin(a)sin(b)sin(c) < x となるものの個数	1
+# sin(b)sin(c) > x / 2sA	1
+# cos((b-c)theta) + cos(a theta) > x/sA	1
+arccos	1
+isnan	1
+# FileName: 	A_fix	1
+# CreatedDate:  2020-09-27 15:12:42 +0900	1
+# LastModified: 2020-09-27 15:23:26 +0900	1
+Possible_or_Impossible	1
+cumprod_mod	1
+# x^n = a+bx mod 1-3x+x^2	1
+get_min	1
+#dp[j][t]	1
+digit_sum	1
+get_move	1
+Rollinhash	1
+2009	1
+subprocess	1
+inv_dict	1
+communicate	1
+t_inv	1
+choose_increasing	1
+# キャンディーとN人の子供	1
+ans_dp	1
+maxval	1
+# dp[i] = P(i heads coins)	1
+#print(*dp,sep="\n")	1
+#print(accA)	1
+edu_dp_d_matching	1
+nokids	1
+mult	1
+#base 1 indexing	1
+curr	1
+20001	1
+tami	1
+dij	1
+single	1
+bipartite	1
+not_bipartite	1
+merge_delay_pattern	1
+len1	1
+head1	1
+#a=list(input())	1
+#a=list(map(int,input().split()))	1
+#b=list(map(int,input().split()))	1
+#ab=[list(map(int,input().split())) for _ in range(n)]	1
+#n,k,q=map(int,input().split())	1
+# i行目に何個黒があるか	1
+black_cnt	1
+# i列目に黒が一つでもあればTrue	1
+exist	1
+# doc: git.io/vy4co	1
+# https://atcoder.jp/contests/arc069/tasks/arc069_b	1
+# 両方試すかな？ (1が羊(0)のとき，1が狼(1)のとき)	1
+# print(ans)	1
+#from collections import deque,defaultdict	1
+printn	1
+# and False	1
+BIG	1
+#R = 998244353	1
+ddprint	1
+SCC	1
+Bob	1
+Draw	1
+matched_lines	1
+OneStrokePath	1
+# 0:高橋君の番、1:青木君の番	1
+# 奇数の要素の個数	1
+100000000	1
+parse_data	1
+fav_pattern	1
+loads	1
+1e9	1
+# nが奇数/偶数の場合で分ける	1
+# 0 が１人つ残りは、2,4,6... が2人ずついるはず	1
+vowel	1
+consonant	1
+remaerd	1
+resare	1
+dreamer	1
+eraser	1
+dream	1
+# debug = lambda *a, **kw: print(*a, **kw, file=sys.stderr)	1
+#the number of nodes is 2n-1	1
+Access	1
+#[l, r)	1
+EQUAL	1
+GREATER	1
+LESS	1
+#pa(mc)	1
+#b , c = tin()	1
+# YouTubeの通り	1
+qn	1
+qi	1
+# pos[i]...dd[i]の移動前の位置	1
+# print(pos)	1
+# bb[i]...dd[i]の移動前にこの距離以上の位置にいればゴールに届かないという境目	1
+###	1
+# 開始時点で、(時計回りの蟻の数)-(半時計まわりの蟻)	1
+set_mod	1
+type	1
+IndexError	1
+you must specific row and column	1
+solve_naive	1
+# 整数 1 つ	1
+# 整数複数個	1
+# 整数 N 個 (改行区切り)	1
+# 整数 N 個 (スペース区切り)	1
+# N = list(map(int, input().split()))	1
+# 整数 (縦 H 横 W の行列)	1
+# A = [list(map(int, input().split())) for i in range(H)]	1
+Score	1
+cumsum2	1
+# v: h*wの2次元リスト	1
+#Ai += x O(logN)	1
+# Failed to predict input format	1
+#縦3分割	1
+#横3分割	1
+#縦1横２分割	1
+# print(leftlis)	1
+# print(rightlis)	1
+# (i, j, k+1)に置くのが、条件(l,x)に適しているか	1
+# dp[i][j][k] (k <= j <= i) 	1
+# 三色それぞれ、最後に使ったindex(1-indexed)がi,j,k	1
+#!/usr/local/bin/python3	1
+# https://atcoder.jp/contests/agc014/tasks/agc014_a	1
+dst	1
+getcircle	1
+#針にぶつかる範囲の円	1
+crosscircle	1
+#円の交点	1
+solvM	1
+lv	1
+RS	1
+dfs0	1
+mod2	1
+=+-*()01	1
+failed	1
+intersection01	1
+CD	1
+BD	1
+CA	1
+level	1
+add_multi_edge	1
+cap2	1
+edge1	1
+# 残り M 秒あるとする。	1
+# dp1：人数	1
+# dp2：生産開始時刻の総和	1
+newdp1	1
+ones_like	1
+newdp2	1
+zeros_like	1
+# 反転で同心円に帰着する	1
+# 複比	1
+# 内側の円が1, 外側の円が半径Rであるような同心円に帰着	1
+num_S	1
+# リセット	1
+# E2 において、y-rooted tree とみて、depth,par を計算	1
+# x の必勝頂点を判定するのに必要	1
+#from itertools import permutations,combinations	1
+input.py	1
+output.py	1
+get_array	1
+get_ints	1
+#return a,b	1
+get_3_ints	1
+sod	1
+isPrime	1
+# 0未満になる要素があるか判定	1
+check1	1
+len(d	1
+.popleft()	1
+# 黒マス1個が影響を与える3x3領域の数は9個	1
+# 黒マスごとに周りの各3x3に対して黒マス数をインクリメントすればよい	1
+T0	1
+T1	1
+pr6	1
+.X	1
+<v>^	1
+carmichael	1
+# x = A + 1	1
+# while True:	1
+# 	if x*x <= n:	1
+# 		if n//x < B:	1
+# 			ans += 1	1
+# 		x += 1	1
+# 	else:	1
+# 		return ans + min(n//x,B-1)	1
+slv	1
+# どれだけの要素を0にできるか。	1
+# 0にできない要素の和を最小化する。	1
+# a<=bとなっているところは0にできる	1
+# ナップザック問題？	1
+# allすべて同じ文字	1
+# any連続が存在すると0	1
+30001	1
+ijk	1
+ans092	1
+#sys.setrecursionlimit(10**9)	1
+#from functools import lru_cache	1
+RD	1
+FI	1
+MF	1
+# rstrip().decode()	1
+# 各桁の xor を考える	1
+# 2**(i-1) の位	1
+# [2**(i-1)-x,2*2**(i-1)-x),[3*2**(i-1)-x,4*2**(i-1)-x) にある Y の要素の個数を数え上げる	1
+# 尺取り法	1
+OrderedDict	1
+# x座標でソート 青点基準で考える	1
+# 青点は、自分よりx座標が小さい赤点の中でy座標が最大のものをとればよい	1
+insort_right	1
+#func(リスト,値)	1
+1.0e-20	1
+lint	1
+ilint	1
+lprint	1
+# ブロック数	1
+# x番目のブロック(0-indexed)	1
+# x*a+y+1個目の要素(1-indexed)	1
