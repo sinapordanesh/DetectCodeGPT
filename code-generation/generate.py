@@ -82,7 +82,7 @@ def load_data(path='data/CodeSearchNet', language='python', max_num=10000, file_
 
     elif "TheVault" in path:
 
-        path_to_data = f'{path}/{language}/small_train.jsonl'
+        path_to_data = f'{path}/small_train.jsonl'
 
         logger.info(f'Loading data from {path_to_data}')
 

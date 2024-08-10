@@ -11,11 +11,11 @@ df2 = pd.read_parquet(parquet_file2)
 # Merge the DataFrames (you can adjust the type of merge as needed)
 merged_df = pd.concat([df1, df2], ignore_index=True)
 
-# Convert the merged DataFrame to JSON format
-json_result = merged_df.to_json(orient='records', lines=True)
+# Convert the merged DataFrame to JSONL format
+jsonl_result = merged_df.to_json(orient='records', lines=True)
 
-# Save the JSON to a file
-with open('merged_file.json', 'w') as json_file:
-    json_file.write(json_result)
+# Save the JSONL to a file
+with open('small_train.jsonl', 'w') as jsonl_file:
+    jsonl_file.write(jsonl_result)
 
-print("Merged JSON file created successfully!")
+print("Merged JSONL file created successfully!")
