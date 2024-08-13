@@ -4,6 +4,7 @@ import json
 import time
 import sys
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 
 # Access the API key from the environment variable
@@ -69,39 +70,40 @@ Instructions:
         print(f"An error occurred: {e}")
         return "Timeout or error occurred."
     
+    
+def process_prompt(item):
+    original_prompt = item['Prompt']
+    file_name = item["File_Name"]
+    transformed_prompt = generate_transformed_prompt(original_prompt=original_prompt)
+    return {
+        "original_prompt": original_prompt, 
+        "Prompt": transformed_prompt, 
+        "File_Name": file_name
+        }
 
-def main(input_file, output_file):
+
+def main(input_file, output_file, max_workers=5):
     # Load the input JSON file
     with open(input_file, 'r') as infile:
         data = json.load(infile)
 
     results = []
-
-    i = 0
-    for i, item in enumerate(data):
-        original_prompt = item['Prompt']
-        file_name = item["File_Name"]
+    
+    # Use ThreadPoolExecutor for parallel processing
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        future_to_prompt = {executor.submit(process_prompt, item): item for item in data}
         
-        
-        # Show iteration process visually
-        sys.stdout.write(f"\rProcessing prompt {i + 1} of {len(data)}...")
-        sys.stdout.flush()
-        
-        # Generate the transformed prompt
-        transformed_prompt = generate_transformed_prompt(original_prompt=original_prompt)
-        
-        # Collect the transformed prompt
-        results.append({
-            "original_prompt": original_prompt, 
-            "Prompt": transformed_prompt, 
-            "File_Name": file_name
-            })
-        
-        # Sleep to prevent hitting rate limits
-        time.sleep(1)  # Adjust if necessary
-        
-        i += 1
-        if i >= 5: break
+        # i = 0
+        for i, future in enumerate(as_completed(future_to_prompt)):
+            try:
+                result = future.result()
+                results.append(result)
+                
+                # Show iteration process visually
+                sys.stdout.write(f"\rProcessed {i + 1} of {len(data)} prompts...")
+                sys.stdout.flush()
+            except Exception as e:
+                print(f"\nError processing prompt {i + 1}: {e}")
 
     # Save results to the output JSON file
     with open(output_file, 'w') as outfile:
@@ -114,8 +116,12 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--input', type=str, default="input.json")
     parser.add_argument('--output', type=str, default="output.json")
+    parser.add_argument('--workers', type=int, default=5, help="Number of parallel workers")
+
     args = parser.parse_args()
     
     input_path = args.input
     output_path = args.output
-    main(input_path, output_path)
+    max_worker = args.workers
+    
+    main(input_path, output_path, max_worker)
