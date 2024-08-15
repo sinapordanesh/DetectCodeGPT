@@ -31,4 +31,4 @@ echo "Job finished with exit code $? at: `date`"
 # $scontrol show job jobID
 # $squeue -p partition_name
 
-# current_id: squeue -j 31782984
+# current_id: squeue -j 31793612

@@ -131,11 +131,11 @@ def load_data(path='data/CodeSearchNet', language='python', max_num=10000, file_
         failed = 0
         success = 0
 
-        max_prompt_len = 128
-        min_prompt_len = 5
+        # max_prompt_len = 128
+        # min_prompt_len = 5
 
-        max_solution_len = 256
-        min_solution_len = 5
+        # max_solution_len = 256
+        # min_solution_len = 5
 
         with open(path_to_json, 'r') as f:
             data = json.load(f)
@@ -148,11 +148,11 @@ def load_data(path='data/CodeSearchNet', language='python', max_num=10000, file_
                         solution = sol_file.read()
                         prompt = item['Prompt']
 
-                        if len(prompt.split()) > max_prompt_len or len(prompt.split()) < min_prompt_len:
-                            continue
+                        # if len(prompt.split()) > max_prompt_len or len(prompt.split()) < min_prompt_len:
+                            # continue
 
-                        if len(solution.split()) > max_solution_len or len(solution.split()) < min_solution_len:
-                            continue
+                        # if len(solution.split()) > max_solution_len or len(solution.split()) < min_solution_len:
+                            # continue
 
                         all_prompts.append(prompt)
                         all_solutions.append(solution)
