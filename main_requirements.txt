@@ -1,4 +1,5 @@
 openai
+# pip install --only-binary=:all: openai
 numpy
 torch
 transformers
@@ -9,7 +10,7 @@ scipy
 matplotlib
 scikit-learn
 tqdm
-baselines
+# baselines
 accelerate
 tree-sitter==0.20.1
 huggingface_hub
