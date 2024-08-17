@@ -40,7 +40,8 @@ def load_data(path='data/CodeSearchNet', language='python', max_num=10000, file_
 
     elif 'CodeSearchNet' in path:
 
-        path_to_data = f'{path}/{language}/{file_name}.jsonl'
+        path_to_data = f'{path}/{file_name}.jsonl'
+        # path_to_data = path
 
         logger.info(f'Loading data from {path_to_data}')
 

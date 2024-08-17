@@ -141,6 +141,7 @@ cache/
 # data/
 *back*/
 *.pt
+*.jsonl
 
 
 code-generation/data/CodeSearchNet/python/train.jsonl

@@ -18,7 +18,7 @@ echo "Starting run at: `date`"
 # module load python/3.9.7
 source ~/software/init-conda
 conda activate myenv
-python generate.py --path data/main_data/reformatted_prompts --model_name codeparrot/codeparrot
+python generate.py --path data/CodeSearchNet/splitted/train_5 --model_name codellama/CodeLlama-7b-hf --max_num 20000
 # ---------------------------------------------------------------------
 echo "Job finished with exit code $? at: `date`"
 # ---------------------------------------------------------------------
@@ -31,4 +31,4 @@ echo "Job finished with exit code $? at: `date`"
 # $scontrol show job jobID
 # $squeue -p partition_name
 
-# current_id: squeue -j 31789681
+# current_id: squeue -j 31847603, 31847833, 31847843, 31847846, 31847848
