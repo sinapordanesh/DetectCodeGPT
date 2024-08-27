@@ -144,17 +144,9 @@ cache/
 *.jsonl
 
 
-code-generation/data/CodeSearchNet/python/train.jsonl
-
-code-generation/data/TheVault/python-00000-of-00002.parquet 
-code-generation/data/TheVault/python-00001-of-00002.parquet
-results/codeparrot-100k/outputs.txt
-results/codeparrot-100k/outputs_v2.txt
-code-generation/output/CodeSearchNet/codeparrot-100000-tp0.2/outputs.txt
-code-generation/output/CodeSearchNet/codeparrot-100000-tp0.2/outputs_v2.txt\
-
-results/csn-codeparrot-100k/outputs_v2.txt 
-results/csn-codeparrot-100k/outputs.txt
+code-generation/data/
+code-generation/output/
+results/
 
 code-generation/data/TheVault/merged_file.json
 
