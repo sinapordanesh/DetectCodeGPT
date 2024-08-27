@@ -6,9 +6,9 @@
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=32
-#SBATCH --gpus-per-node=a100:2
+#SBATCH --gpus-per-node=a100:4
 #SBATCH --mem=256gb
-#SBATCH --time=0-110:00:00
+#SBATCH --time=0-120:00:00
 
 # Optional: Email notifications
 #SBATCH --mail-user=myhomeqrc@gmail.com
@@ -18,10 +18,10 @@
 echo "Starting run at: `date`"
 # ---------------------------------------------------------------------
 source ../env/bin/activate
-python generate.py --path data/CodeSearchNet --model_name codellama/CodeLlama-7b-hf --max_num 100000
+python generate.py --path data/CodeSearchNet --model_name codellama/CodeLlama-7b-hf --max_num 100000 --temperature 1.0
 # ---------------------------------------------------------------------
 echo "Job finished with exit code $? at: `date`"
 # ---------------------------------------------------------------------
 
 
-# current_id: squeue -j 33101314
+# current_id: squeue -j 33903084
