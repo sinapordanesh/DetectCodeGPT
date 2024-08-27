@@ -33,7 +33,7 @@ parser.add_argument('--dataset', type=str, default="writing")
 parser.add_argument('--dataset_key', type=str, default="document")
 parser.add_argument('--pct_words_masked', type=float, default=0.3)
 parser.add_argument('--span_length', type=int, default=2)
-parser.add_argument('--n_samples', type=int, default=5)
+parser.add_argument('--n_samples', type=int, default=3000)
 parser.add_argument('--n_perturbation_list', type=str, default="10")
 parser.add_argument('--n_perturbation_rounds', type=int, default=1)
 parser.add_argument('--base_model_name', type=str, default="")
@@ -83,7 +83,7 @@ args_dict = {
     'pct_words_masked': 0.5,
     'pct_identifiers_masked': 0.75,
     'span_length': 2,
-    'n_samples': 500,
+    'n_samples': 3000,
     'n_perturbation_list': "50",
     'n_perturbation_rounds': 1,
     'base_model_name': "codellama/CodeLlama-7b-hf",
